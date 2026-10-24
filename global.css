@@ -1442,6 +1442,22 @@ main > :last-child {
   top: 50%;
 }
 
+.-bottom-24 {
+  bottom: -6rem;
+}
+
+.-left-20 {
+  left: -5rem;
+}
+
+.-right-16 {
+  right: -4rem;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1589,6 +1605,18 @@ main > :last-child {
   margin-top: 2rem;
 }
 
+.mt-space-lg {
+  margin-top: 1.5rem;
+}
+
+.mt-space-sm {
+  margin-top: 0.75rem;
+}
+
+.mt-space-xs {
+  margin-top: 0.5rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1633,6 +1661,14 @@ main > :last-child {
 
 .aspect-\[4\/5\] {
   aspect-ratio: 4/5;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
 }
 
 .h-10 {
@@ -1685,6 +1721,18 @@ main > :last-child {
 
 .h-full {
   height: 100%;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .min-h-\[360px\] {
@@ -1747,6 +1795,22 @@ main > :last-child {
   width: 100%;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1777,6 +1841,10 @@ main > :last-child {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-1 {
@@ -1862,6 +1930,10 @@ main > :last-child {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row-reverse {
@@ -1960,6 +2032,10 @@ main > :last-child {
   gap: 0.25rem;
 }
 
+.gap-space-3xl {
+  gap: 4rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1972,6 +2048,10 @@ main > :last-child {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .truncate {
@@ -2106,6 +2186,14 @@ main > :last-child {
 
 .border-white\/15 {
   border-color: rgb(255 255 255 / 0.15);
+}
+
+.border-secondary-fixed\/30 {
+  border-color: rgb(213 227 255 / 0.3);
+}
+
+.border-surface-variant\/40 {
+  border-color: rgb(233 226 210 / 0.4);
 }
 
 .border-t-secondary {
@@ -2255,6 +2343,18 @@ main > :last-child {
 
 .bg-white\/5 {
   background-color: rgb(255 255 255 / 0.05);
+}
+
+.bg-secondary-container\/10 {
+  background-color: rgb(117 173 254 / 0.1);
+}
+
+.bg-secondary-fixed-dim\/10 {
+  background-color: rgb(166 200 255 / 0.1);
+}
+
+.bg-surface-container-lowest\/10 {
+  background-color: rgb(255 255 255 / 0.1);
 }
 
 .bg-gradient-to-b {
@@ -2495,6 +2595,16 @@ main > :last-child {
   padding-bottom: 0.25rem;
 }
 
+.py-space-2xl {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-space-xs {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -2565,6 +2675,10 @@ main > :last-child {
 
 .pt-space-xl {
   padding-top: 2rem;
+}
+
+.pt-space-sm {
+  padding-top: 0.75rem;
 }
 
 .text-center {
@@ -2947,6 +3061,10 @@ main > :last-child {
 
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
+}
+
+.text-surface-variant\/90 {
+  color: rgb(233 226 210 / 0.9);
 }
 
 .underline {
@@ -3489,14 +3607,31 @@ main > :last-child {
     padding: 3rem;
   }
 
+  .md\:p-space-xl {
+    padding: 2rem;
+  }
+
   .md\:px-margin-tablet {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
+  .md\:py-space-3xl {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
   }
 }
 
