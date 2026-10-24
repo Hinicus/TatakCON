@@ -1811,6 +1811,18 @@ main > :last-child {
   width: 25%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
