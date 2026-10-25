@@ -1522,6 +1522,14 @@ main > :last-child {
   top: 3rem;
 }
 
+.left-3 {
+  left: 0.75rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1540,6 +1548,10 @@ main > :last-child {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .order-1 {
@@ -1955,6 +1967,10 @@ main > :last-child {
   width: 0.375rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -2070,6 +2086,12 @@ main > :last-child {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .resize {
@@ -2769,6 +2791,14 @@ main > :last-child {
   background-color: rgb(233 226 210 / var(--tw-bg-opacity, 1));
 }
 
+.bg-primary\/50 {
+  background-color: rgb(0 19 49 / 0.5);
+}
+
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2863,6 +2893,12 @@ main > :last-child {
 
 .from-primary\/90 {
   --tw-gradient-from: rgb(0 19 49 / 0.9) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 19 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary\/85 {
+  --tw-gradient-from: rgb(0 19 49 / 0.85) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 19 49 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -3766,6 +3802,10 @@ main > :last-child {
   opacity: 0.75;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-\[0_4px_20px_rgba\(0\2c 19\2c 49\2c 0\.25\)\] {
   --tw-shadow: 0 4px 20px rgba(0,19,49,0.25);
   --tw-shadow-colored: 0 4px 20px var(--tw-shadow-color);
@@ -3946,6 +3986,10 @@ main > :last-child {
 
 .duration-700 {
   transition-duration: 700ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 ::-webkit-scrollbar {
@@ -4143,6 +4187,14 @@ main > :last-child {
   background-color: rgb(255 249 236 / 0.2);
 }
 
+.hover\:bg-primary\/80:hover {
+  background-color: rgb(0 19 49 / 0.8);
+}
+
+.hover\:bg-white\/80:hover {
+  background-color: rgb(255 255 255 / 0.8);
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(0 19 49 / var(--tw-text-opacity, 1));
@@ -4209,6 +4261,10 @@ main > :last-child {
 .hover\:file\:bg-\[\#b3c7f2\]::file-selector-button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(179 199 242 / var(--tw-bg-opacity, 1));
+}
+
+.focus\:opacity-100:focus {
+  opacity: 1;
 }
 
 .focus\:outline-none:focus {
