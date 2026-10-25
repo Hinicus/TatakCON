@@ -2400,6 +2400,20 @@ main > :last-child {
   border-color: rgb(0 19 49 / var(--tw-border-opacity, 1));
 }
 
+.border-error {
+  --tw-border-opacity: 1;
+  border-color: rgb(186 26 26 / var(--tw-border-opacity, 1));
+}
+
+.border-error-container {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 218 214 / var(--tw-border-opacity, 1));
+}
+
+.border-error-container\/40 {
+  border-color: rgb(255 218 214 / 0.4);
+}
+
 .border-t-secondary {
   --tw-border-opacity: 1;
   border-top-color: rgb(24 95 170 / var(--tw-border-opacity, 1));
@@ -2608,6 +2622,24 @@ main > :last-child {
   background-color: rgb(0 19 49 / 0.6);
 }
 
+.bg-error {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 26 26 / var(--tw-bg-opacity, 1));
+}
+
+.bg-error-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 218 214 / var(--tw-bg-opacity, 1));
+}
+
+.bg-error-container\/10 {
+  background-color: rgb(255 218 214 / 0.1);
+}
+
+.bg-error\/80 {
+  background-color: rgb(186 26 26 / 0.8);
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2688,6 +2720,18 @@ main > :last-child {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-error\/20 {
+  --tw-gradient-from: rgb(186 26 26 / 0.2) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(186 26 26 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-error\/40 {
+  --tw-gradient-from: rgb(186 26 26 / 0.4) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(186 26 26 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-\[\#12284b\] {
   --tw-gradient-to: rgb(18 40 75 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #12284b var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -2753,6 +2797,10 @@ main > :last-child {
 
 .to-primary-fixed\/40 {
   --tw-gradient-to: rgb(215 226 255 / 0.4) var(--tw-gradient-to-position);
+}
+
+.to-surface-variant {
+  --tw-gradient-to: #e9e2d2 var(--tw-gradient-to-position);
 }
 
 .object-contain {
@@ -3496,6 +3544,21 @@ main > :last-child {
   color: rgb(2 27 61 / var(--tw-text-opacity, 1));
 }
 
+.text-error {
+  --tw-text-opacity: 1;
+  color: rgb(186 26 26 / var(--tw-text-opacity, 1));
+}
+
+.text-error-container {
+  --tw-text-opacity: 1;
+  color: rgb(255 218 214 / var(--tw-text-opacity, 1));
+}
+
+.text-on-error-container {
+  --tw-text-opacity: 1;
+  color: rgb(147 0 10 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3823,6 +3886,11 @@ main > :last-child {
   border-color: rgb(0 19 49 / var(--tw-border-opacity, 1));
 }
 
+.hover\:border-error:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(186 26 26 / var(--tw-border-opacity, 1));
+}
+
 .hover\:bg-\[\#004480\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 68 128 / var(--tw-bg-opacity, 1));
@@ -4018,6 +4086,11 @@ main > :last-child {
   color: rgb(255 249 236 / var(--tw-text-opacity, 1));
 }
 
+.group:hover .group-hover\:text-error {
+  --tw-text-opacity: 1;
+  color: rgb(186 26 26 / var(--tw-text-opacity, 1));
+}
+
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
@@ -4058,6 +4131,10 @@ main > :last-child {
     right: 1.5rem;
   }
 
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -4096,6 +4173,10 @@ main > :last-child {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -4278,6 +4359,26 @@ main > :last-child {
 
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .lg\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .lg\:row-start-2 {
+    grid-row-start: 2;
   }
 
   .lg\:mt-0 {
