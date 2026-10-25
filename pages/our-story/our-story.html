@@ -77,7 +77,7 @@
           class="max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
             <!-- Left Sub-Navigation Rail (Sticky TOC) -->
-            <aside class="lg:col-span-3 sticky top-12 z-20">
+            <aside class="lg:col-span-3 sticky top-28 z-20">
               <div
                 class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm border border-surface-variant/40">
                 <div
@@ -170,24 +170,18 @@
             <div class="lg:col-span-9 flex flex-col gap-space-2xl">
               <!-- Section: History -->
               <article
-                class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-3xl shadow-sm border border-secondary-fixed/30 scroll-mt-28"
+                class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-DEFAULT shadow-sm"
                 id="history">
                 <div
                   class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-lg">
                   <div>
-                    <div
-                      class="inline-flex items-center gap-space-xxs text-secondary mb-space-xxs">
-                      <span class="material-symbols-outlined text-[16px]"
-                        >menu_book</span
-                      >
-                    </div>
                     <h2
-                      class="font-headline-lg text-[28px] md:text-[34px] text-primary tracking-tight font-serif italic">
+                      class="font-headline-lg text-headline-lg text-primary tracking-tight">
                       History of the College of Nursing
                     </h2>
                   </div>
                   <span
-                    class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-start font-semibold">
+                    class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-start">
                     <span
                       class="material-symbols-outlined text-[16px] text-secondary"
                       >verified</span
@@ -195,24 +189,22 @@
                     Chartered December 2003 • B.O.R. Res. No. 65
                   </span>
                 </div>
-
                 <!-- Featured Archival Photo & Text Split -->
                 <div
                   class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-lg items-center">
                   <div
-                    class="md:col-span-5 relative group overflow-hidden rounded-2xl shadow-sm bg-surface-container">
+                    class="md:col-span-5 relative group overflow-hidden rounded-DEFAULT shadow-sm bg-surface-container">
                     <img
                       class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
-                      alt="Vintage black and white photograph of collegiate nursing graduates in white clinical uniforms standing proudly on campus steps"
+                      data-alt="Vintage black and white photograph of collegiate nursing graduates in white clinical uniforms standing proudly on campus steps"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHK1KrO73fsCAuxZP8zEkcoUNLj5_Qpf0gZYxSdbCEAWjlEfnvPSzE69gpjA0BgmuaeQh29TPAuaHARDldum3K7FJ0ivCcblFltgw-Ma5zw-pGfD8n56OLRaxS2q1YO8ga3L45cujS577Hj83zK1zBSwsSl5g-ZimctCSKbhiJrbUaC0AVMoW3dUIyLh3K0Z_Gq9iKk1lp79uVObbVVchWsOvqUzsTlugZHBwsRqsL4S2vTqBH2y5-" />
                     <div
-                      class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex flex-col justify-end p-space-md text-surface">
+                      class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface">
                       <span
-                        class="font-label-sm text-label-sm text-tertiary-fixed-dim font-bold"
+                        class="font-label-sm text-label-sm text-tertiary-fixed-dim"
                         >Pioneering Cohort • SY 2004–2005</span
                       >
-                      <p
-                        class="font-caption text-caption text-surface-variant mt-1">
+                      <p class="font-caption text-caption text-surface-variant">
                         Initial cohort of nearly 200 student nurses across 4
                         sections.
                       </p>
@@ -242,22 +234,20 @@
                     <div class="flex items-center gap-space-md pt-space-xs">
                       <div class="flex flex-col">
                         <span
-                          class="font-headline-md text-2xl font-bold text-secondary font-serif"
+                          class="font-headline-md text-headline-md text-secondary"
                           >~200</span
-                        >
-                        <span
-                          class="font-caption text-caption text-on-surface-variant uppercase font-semibold"
+                        ><span
+                          class="font-caption text-caption text-on-surface-variant uppercase"
                           >Pioneering Students (2004)</span
                         >
                       </div>
-                      <div class="h-8 w-px bg-surface-variant/60"></div>
+                      <div class="h-8 w-px bg-surface-variant"></div>
                       <div class="flex flex-col">
                         <span
-                          class="font-headline-md text-2xl font-bold text-secondary font-serif"
+                          class="font-headline-md text-headline-md text-secondary"
                           >Level I</span
-                        >
-                        <span
-                          class="font-caption text-caption text-on-surface-variant uppercase font-semibold"
+                        ><span
+                          class="font-caption text-caption text-on-surface-variant uppercase"
                           >AACCUP Accredited</span
                         >
                       </div>
@@ -304,173 +294,325 @@
                   nagnanais maging bahagi ng larangan ng kalusugan.
                 </p>
               </article>
-
               <!-- Section: Background & Evolution Split Bento -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
                 <!-- Background Card -->
                 <article
-                  class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between border border-surface-variant/40 scroll-mt-28"
+                  class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between"
                   id="background">
                   <div>
-                    <div class="flex items-center justify-between mb-space-sm">
+                    <div class="flex items-start justify-between mb-space-sm">
+                      <h3
+                        class="font-headline-md text-headline-md text-primary mb-space-sm uppercase tracking-tight">
+                        Vision
+                      </h3>
                       <span
-                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
-                        <span class="material-symbols-outlined text-[18px]"
-                          >domain</span
-                        >
-                      </span>
-                    </div>
-                    <h3
-                      class="font-headline-md text-xl font-bold text-primary mb-space-xs font-serif">
-                      Background &amp; Charter
-                    </h3>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">
-                      BulSU-CON originated from an urgent institutional
-                      imperative to produce nurses grounded in clinical
-                      precision and humanistic care. Conceived under B.O.R.
-                      Resolution No. 65, s. 2003, it transitioned smoothly from
-                      its gestational period within the College of Arts and
-                      Sciences into an independent, prestigious academic pillar
-                      of Bulacan State University.
-                    </p>
-                    <div
-                      class="p-space-sm rounded-xl bg-surface-container mb-space-md">
-                      <span
-                        class="font-label-sm text-label-sm text-primary block mb-space-xxs font-semibold"
-                        >Core Institutional Mandate</span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-primary"
+                        ><span class="material-symbols-outlined text-[18px]"
+                          >visibility</span
+                        ></span
                       >
+                    </div>
+
+                    <div
+                      class="p-space-md rounded-DEFAULT bg-surface-container-low mb-space-md border-b-2 border-b-secondary">
                       <p
-                        class="font-caption text-caption text-on-surface-variant">
-                        Developing world-class, globally competitive, and
-                        ethically committed professional nurses accessible to
-                        the community.
+                        class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+                        "The College of Nursing envisions to be the center of
+                        excellence in nursing education where student's talents
+                        and skills are horned to the fullest potentials in a
+                        culture that promotes highest academic standards."
                       </p>
                     </div>
                   </div>
                   <div
-                    class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-space-sm border-t border-surface-variant/40 font-semibold">
-                    <span>Charter: B.O.R. Res. No. 4, s. 2005</span>
-                    <span class="material-symbols-outlined text-[16px]"
-                      >verified_user</span
+                    class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-space-xs">
+                    <span class="">BulSU-CON Institutional Vision</span
+                    ><span class="material-symbols-outlined text-[16px]"
+                      >verified</span
                     >
                   </div>
                 </article>
-
                 <!-- Evolution Card -->
                 <article
-                  class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between border border-surface-variant/40 scroll-mt-28"
+                  class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between"
                   id="evolution">
                   <div>
                     <div class="flex items-center justify-between mb-space-sm">
+                      <h3
+                        class="font-headline-md text-headline-md text-primary mb-space-sm uppercase tracking-tight">
+                        Mission
+                      </h3>
                       <span
-                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
-                        <span class="material-symbols-outlined text-[18px]"
-                          >trending_up</span
-                        >
-                      </span>
-                    </div>
-                    <h3
-                      class="font-headline-md text-xl font-bold text-primary mb-space-xs font-serif">
-                      Pedagogical Evolution &amp; Laddered Tracks
-                    </h3>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">
-                      On December 6, 2011, the College earned prestigious AACCUP
-                      Level I Accreditation. Demonstrating deep responsiveness
-                      to socioeconomic accessibility, CON introduced laddered
-                      National Competency (NC) courses in Caregiving, Health
-                      Care Services, and Massage Therapy (operational June 2014,
-                      TESDA-accredited June 2015) enabling progressive
-                      healthcare career pathways.
-                    </p>
-                    <div
-                      class="p-space-sm rounded-xl bg-surface-container mb-space-md">
-                      <span
-                        class="font-label-sm text-label-sm text-primary block mb-space-xxs font-semibold"
-                        >TESDA &amp; AACCUP Endorsement</span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-primary"
+                        ><span class="material-symbols-outlined text-[18px]"
+                          >flag</span
+                        ></span
                       >
+                    </div>
+
+                    <div
+                      class="p-space-md rounded-DEFAULT bg-surface-container-low mb-space-md border-b-2 border-b-secondary">
                       <p
-                        class="font-caption text-caption text-on-surface-variant">
-                        Full integration of National Certificates (NC II)
-                        alongside rigorous hospital-based clinical rotations.
+                        class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+                        "The College of Nursing shall provide holistic
+                        instruction and training in nursing discipline
+                        reinforced with desirable work habits and competencies
+                        capable of responding to the needs of the local and the
+                        demands of the global standard of health care."
                       </p>
                     </div>
                   </div>
                   <div
-                    class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-space-sm border-t border-surface-variant/40 font-semibold">
-                    <span>AACCUP Level I Accredited</span>
-                    <span class="material-symbols-outlined text-[16px]"
-                      >biotech</span
+                    class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-space-xs">
+                    <span class="">BulSU-CON Institutional Mission</span
+                    ><span class="material-symbols-outlined text-[16px]"
+                      >flag_circle</span
                     >
                   </div>
                 </article>
               </div>
-
               <!-- Section: Fun Facts & Archival Trivia -->
               <article
-                class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-3xl shadow-sm border border-secondary-fixed/30 scroll-mt-28"
+                class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-DEFAULT shadow-sm"
                 id="fun-facts">
                 <div class="flex items-center justify-between mb-space-lg">
                   <div>
                     <h3
-                      class="font-headline-md text-[24px] font-bold text-primary font-serif">
-                      Archival Trivia &amp; Fun Facts
+                      class="font-headline-md text-headline-md text-primary tracking-tight uppercase">
+                      General Objectives
                     </h3>
                   </div>
                   <span
                     class="material-symbols-outlined text-secondary text-[28px]"
-                    >lightbulb</span
+                    >checklist</span
                   >
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-                  <div class="bg-surface-container-low p-space-md rounded-2xl">
-                    <span
-                      class="text-[40px] leading-none text-secondary/30 font-serif font-bold block mb-2"
-                      >01</span
+                <div
+                  class="bg-surface-container-low p-space-md rounded-DEFAULT mb-space-xl">
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-xs">
+                    To produces graduates who shall uphold Filipino values in
+                    providing holistic nursing care in any setting. To discover
+                    and develop optimum potentials and capabilities for
+                    professional competence.
+                  </p>
+                  <p
+                    class="font-body-md text-body-md text-primary font-semibold leading-relaxed">
+                    To produce nursing graduates capable in demonstrating
+                    proficiency in all the Key Areas of Responsibilities (KAR);
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="inline-flex items-center gap-space-xxs text-secondary mb-space-md">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >stars</span
+                    ><span
+                      class="font-label-sm text-label-sm uppercase tracking-wider font-semibold"
+                      >11 Key Areas of Responsibilities (KAR)</span
                     >
-                    <h4
-                      class="font-title-sm text-title-sm text-primary mb-space-xxs font-semibold">
-                      The Florence Nightingale Lamp
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                      The symbolic Nightingale lamp lighted by BulSU student
-                      nurses during capping and pinning ceremonies honors the
-                      noble lineage of clinical dedication.
-                    </p>
                   </div>
-                  <div class="bg-surface-container-low p-space-md rounded-2xl">
-                    <span
-                      class="text-[40px] leading-none text-secondary/30 font-serif font-bold block mb-2"
-                      >02</span
-                    >
-                    <h4
-                      class="font-title-sm text-title-sm text-primary mb-space-xxs font-semibold">
-                      From 4 to 8 Sections
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                      Within just a single academic cycle from 2004 to 2005,
-                      student applicant demand doubled the college cohort from
-                      four to eight full academic sections.
-                    </p>
-                  </div>
-                  <div class="bg-surface-container-low p-space-md rounded-2xl">
-                    <span
-                      class="text-[40px] leading-none text-secondary/30 font-serif font-bold block mb-2"
-                      >03</span
-                    >
-                    <h4
-                      class="font-title-sm text-title-sm text-primary mb-space-xxs font-semibold">
-                      Laddered Competencies
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                      BulSU-CON was among the earliest regional colleges to
-                      offer TESDA-accredited healthcare modular certifications
-                      directly interwoven with BSN preparation.
-                    </p>
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-sm">
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >01</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Safety and quality nursing care
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Core clinical standard ensuring patient-centered
+                          safety and evidence-based practice.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >02</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Management of resources and environment
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Efficient stewardship of healthcare equipment,
+                          clinical supplies, and therapeutic space.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >03</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Health education
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Promoting health literacy and empowering individuals
+                          and communities.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >04</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Legal Responsibility
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Strict adherence to statutory obligations and nursing
+                          jurisdictional policies.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >05</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Ethico-moral responsibility
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Integrity, bioethics, and respect for human dignity
+                          and patient autonomy.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >06</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Personal and professional development
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Continuous lifelong education, self-improvement, and
+                          collegiate mentorship.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >07</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Quality improvement
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Constant assessment of outcomes and systematic
+                          enhancement of healthcare delivery.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >08</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Research
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Inquiry and utilization of evidence-based nursing
+                          science for clinical innovations.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >09</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Record management
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Precise, confidential, and comprehensive health
+                          information systems documentation.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >10</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Communication
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Effective therapeutic communication with patients,
+                          families, and healthcare teams.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-surface-container-low p-space-md rounded-DEFAULT flex items-start gap-space-sm hover:shadow-sm transition-shadow md:col-span-2 lg:col-span-1">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed text-primary font-bold text-label-sm flex items-center justify-center flex-shrink-0"
+                        >11</span
+                      >
+                      <div>
+                        <h4
+                          class="font-title-sm text-title-sm text-primary mb-space-xxs">
+                          Collaboration and Teamwork
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant">
+                          Multidisciplinary engagement to deliver unified,
+                          synchronized healthcare solutions.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </article>

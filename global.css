@@ -2516,6 +2516,11 @@ main > :last-child {
   border-top-color: rgb(24 95 170 / var(--tw-border-opacity, 1));
 }
 
+.border-b-secondary {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(24 95 170 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[\#001331\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 19 49 / var(--tw-bg-opacity, 1));
@@ -2757,6 +2762,11 @@ main > :last-child {
 
 .bg-surface-variant\/60 {
   background-color: rgb(233 226 210 / 0.6);
+}
+
+.bg-surface-variant {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 226 210 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b {
@@ -4477,12 +4487,20 @@ main > :last-child {
 }
 
 @media (min-width: 768px) {
+  .md\:top-16 {
+    top: 4rem;
+  }
+
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
 
   .md\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .md\:h-24 {
@@ -4582,6 +4600,10 @@ main > :last-child {
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-28 {
+    top: 7rem;
+  }
+
   .lg\:order-2 {
     order: 2;
   }
