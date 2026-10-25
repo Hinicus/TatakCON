@@ -255,68 +255,100 @@ const headerHTML = `
 // 3. Footer Component
 const footerHTML = `
   <footer class="bg-[#12284b] text-white pt-14 pb-8 border-t border-white/10 mt-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-clear-skies mb-2">
-              <span class="material-symbols-outlined text-sm">newspaper</span>
-              <span>DISPATCHES &amp; MEDIA</span>
-            </div>
-            <h3 class="serif-heading text-xl font-bold mb-2">Latest News</h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-6">Frontline updates, research breakthroughs, clinical honors, and community milestones from across the college.</p>
-          </div>
-          <a class="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-xl bg-blueberry hover:bg-[#004480] text-white text-xs font-semibold transition-colors" href="#news">
-            <span>Explore News Archive</span>
-            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </a>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-clear-skies mb-2">
-              <span class="material-symbols-outlined text-sm">shield</span>
-              <span>OUR IDENTITY</span>
-            </div>
-            <h3 class="serif-heading text-xl font-bold mb-2">About the College</h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-6">Founded on ethical care, evidence-based inquiry, and collegiate clinical leadership beyond classroom boundaries.</p>
-          </div>
-          <a class="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-xl bg-blueberry hover:bg-[#004480] text-white text-xs font-semibold transition-colors" href="#about">
-            <span>Discover Mission</span>
-            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </a>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-clear-skies mb-2">
-              <span class="material-symbols-outlined text-sm">groups</span>
-              <span>LIAISON &amp; PRECEPTORS</span>
-            </div>
-            <h3 class="serif-heading text-xl font-bold mb-2">Connect &amp; Inquire</h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-6">Reach out to faculty offices, clinical coordinators, student council executives, and alumni relations.</p>
-          </div>
-          <a class="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-xl bg-blueberry hover:bg-[#004480] text-white text-xs font-semibold transition-colors" href="#contact">
-            <span>Get In Touch</span>
-            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </a>
-        </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Brand header -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 mb-8 border-b border-white/10">
+      <div>
+        <span class="block text-xs font-bold uppercase tracking-wider text-clear-skies mb-1">Bulacan State University • College of Nursing</span>
+        <h3 class="font-headline-md text-headline-md text-surface tracking-tight font-serif">"TO SAVE AND TO SERVICE"</h3>
       </div>
-      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-        <p>© ${currentYear} College of Nursing. TatakCON: Beyond the Walls. All rights reserved.</p>
-        <div class="flex items-center space-x-4">
-          <a class="hover:text-white transition-colors flex items-center gap-1" href="${
-            isLoggedIn ? "/pages/admin/manage.html" : "/pages/admin/login.html"
-          }" title="Editorial Portal">
-            <span class="material-symbols-outlined text-sm">admin_panel_settings</span>
-            <span>${isLoggedIn ? "Editorial Dashboard" : "Contributor Portal"}</span>
-          </a>
-          <span class="text-white/20">|</span>
-          <a class="hover:text-white transition-colors" href="#web" title="Global network"><span class="material-symbols-outlined text-base">public</span></a>
-          <a class="hover:text-white transition-colors" href="#lang" title="Language selection"><span class="material-symbols-outlined text-base">language</span></a>
-          <a class="hover:text-white transition-colors" href="#share" title="Share portal"><span class="material-symbols-outlined text-base">share</span></a>
-        </div>
+      <div class="flex items-center gap-4 self-start md:self-auto bg-white/5 border border-white/10 rounded-2xl px-5 py-3">
+        <img alt="Bulacan State University Logo" class="w-14 h-14 object-contain rounded-full bg-white/10 p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4CXiiyNmDCisGd0AENj86KsBZypmYUac7Hdy565E4nf-n_b9G7oBUxO4_ICtPoE-hImnjTkV3Yj-wrD5vsnWeuWCfnDEWbqtoMvRzdlV9u9KMOP28nyKBq32kiELq_cCF18AN5bHjeVMiWap0AZ6EKazyEXRE03I_zMwcOyUU2WM2YWgIWJClNOxR0OhqJ7wrpGVuy9gErL-ICrfgv7boc4eUVGBse2qZZxiOk244p_sKTgsK_7TqgMkh3ov5PTxYhQ">
+        <div class="w-px h-10 bg-white/10"></div>
+        <img alt="College of Nursing Logo" class="w-14 h-14 object-contain rounded-full bg-white/10 p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn-zC6TtQTlZokg2FPBxiN8q-6ABUs75diq1L-S4cdfCekbdcOtn7LaVp2jkHTFiCcGamvxZ2XchgZdTmVxaBuVi8chISLbejCCeoT9vqxFDLAa81EHG9zmXuP7r5gKJL-5mZU7EJTVbHAh7G0Y9X2su1SgA9pLM9OuDWFxRQKISCWtxWEQXxcuu004bEhsfTCE7RoBdV56ZNjTl-HGc3EjCEeqJs_xNk1_cmO1drlXZpfHpNd5LhHxQnTvwAw51cBag">
       </div>
     </div>
-  </footer>
+
+    <!-- Affiliated organizations -->
+    <div class="pb-8 mb-8 border-b border-white/10">
+      <div class="flex items-center gap-2 mb-6 text-xs font-bold uppercase tracking-wider text-clear-skies">
+        <span class="material-symbols-outlined text-[18px]">groups</span>
+        <span>Affiliated Organizations &amp; Student Guilds</span>
+      </div>
+      <div class="flex flex-wrap items-start justify-center gap-3 sm:gap-4">
+        <a href="/pages/con-community/organizations/knightingale-society.html" title="Knightingale Society" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="Knightingale Society" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/knightingale-society.png">
+          </div>
+        </a>
+        <a href="/pages/con-community/con-community.html" title="CORTEX" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="Cortex - The CON Academic Society" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/cortex-the-con-academic-society.jpg">
+          </div>
+        </a>
+        <a href="/pages/con-community/organizations/the-nurses-notes.html" title="The Nurses' Notes" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="The Nurses' Notes" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/the-nurses-notes.jpg">
+          </div>
+        </a>
+        <a href="/pages/con-community/organizations/red-cross-youth-council.html" title="Red Cross Youth Council" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="Red Cross Youth Council" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/red-cross-youth-council.jpg">
+          </div>
+        </a>
+        <a href="/pages/con-community/organizations/pacemaker-all-stars.html" title="Pacemaker All-Stars" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="Pacemaker All-Stars" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/pacemaker-all-stars.jpg">
+          </div>
+        </a>
+        <a href="/pages/con-community/organizations/lungs.html" title="LUNGS" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="LUNGS" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/lungs-lydians-united-nursing-giocoso-singers.png">
+          </div>
+        </a>
+        <a href="/pages/con-community/organizations/unang-hakbang.html" title="Unang Hakbang" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="Unang Hakbang" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/unang-hakbang.jpg">
+          </div>
+        </a>
+        <a href="/pages/con-community/con-community.html" title="Local Student Council" class="flex flex-col items-center text-center group cursor-pointer">
+          <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
+            <img alt="Local Student Council" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/local-student-council.jpg">
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Quick links -->
+    <div class="flex flex-wrap items-center justify-between gap-4 text-xs text-slate-300 mb-8">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <a class="hover:text-white transition-colors" href="/">Home</a>
+        <a class="hover:text-white transition-colors" href="/pages/con-community/con-community.html">CON Community</a>
+        <a class="hover:text-white transition-colors" href="/pages/traditions-culture/traditions-culture.html">Traditions &amp; Culture</a>
+        <a class="hover:text-clear-skies transition-colors inline-flex items-center gap-1" href="https://bulsu.edu.ph" target="_blank" rel="noopener noreferrer">
+          <span>bulsu.edu.ph</span>
+          <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>© ${currentYear} #TatakCON Research Project &amp; BulSU College of Nursing. All rights reserved. <span class="text-clear-skies"> TatakCON </span></p>
+      <div class="flex items-center space-x-4">
+        <a class="hover:text-white transition-colors flex items-center gap-1" href="${
+          isLoggedIn ? "/pages/admin/manage.html" : "/pages/admin/login.html"
+        }" title="Editorial Portal">
+          <span class="material-symbols-outlined text-[16px]">admin_panel_settings</span>
+          <span>${isLoggedIn ? "Editorial Dashboard" : "Contributor Portal"}</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
 `;
 
 document.addEventListener("DOMContentLoaded", () => {

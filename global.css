@@ -1895,6 +1895,10 @@ main > :last-child {
   width: 6rem;
 }
 
+.w-px {
+  width: 1px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -2136,6 +2140,15 @@ main > :last-child {
   gap: 0.25rem;
 }
 
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -2188,6 +2201,10 @@ main > :last-child {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .self-end {
@@ -3986,6 +4003,11 @@ main > :last-child {
   color: rgb(149 204 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-clear-skies:hover {
+  --tw-text-opacity: 1;
+  color: rgb(140 193 233 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -4056,6 +4078,11 @@ main > :last-child {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:border-clear-skies {
+  --tw-border-opacity: 1;
+  border-color: rgb(140 193 233 / var(--tw-border-opacity, 1));
+}
+
 .group:hover .group-hover\:bg-primary-container {
   --tw-bg-opacity: 1;
   background-color: rgb(18 40 75 / var(--tw-bg-opacity, 1));
@@ -4064,6 +4091,10 @@ main > :last-child {
 .group:hover .group-hover\:bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(24 95 170 / var(--tw-bg-opacity, 1));
+}
+
+.group:hover .group-hover\:bg-white\/20 {
+  background-color: rgb(255 255 255 / 0.2);
 }
 
 .group:hover .group-hover\:text-\[\#0055a0\] {
@@ -4179,6 +4210,10 @@ main > :last-child {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -4209,6 +4244,10 @@ main > :last-child {
 
   .sm\:gap-space-sm {
     gap: 0.75rem;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 
   .sm\:self-center {
@@ -4306,6 +4345,14 @@ main > :last-child {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:self-auto {
+    align-self: auto;
   }
 
   .md\:p-space-2xl {
@@ -4411,6 +4458,10 @@ main > :last-child {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:gap-8 {
