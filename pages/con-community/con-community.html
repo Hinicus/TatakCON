@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CON Community - TatakCON</title>
+
+    <!-- Compiled Tailwind & Global CSS -->
+    <link href="/global.css" rel="stylesheet" />
+
+    <!-- Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet" />
+  </head>
+
+  <body
+    class="min-h-screen bg-surface font-body-md text-on-surface flex flex-col antialiased selection:bg-clear-skies selection:text-deep-ocean">
+    <!-- Dynamic Header (Injected by components.js) -->
+    <div id="header-placeholder"></div>
+
+    <main class="w-full flex-grow bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- Hero Banner: Soft Sky Architectural Header -->
+        <section
+          class="relative w-full overflow-hidden bg-primary-container text-surface py-space-2xl md:py-space-3xl">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-primary-container via-tertiary-container to-secondary opacity-95"></div>
+          <div
+            class="absolute -right-20 -top-24 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+          <div
+            class="absolute -left-16 bottom-0 w-80 h-80 rounded-full bg-tertiary-fixed-dim/15 blur-2xl pointer-events-none"></div>
+
+          <div
+            class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col items-center text-center">
+            <!-- Centered Icon Badge -->
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full p-1 bg-surface-container-lowest/15 backdrop-blur-md shadow-xl mb-space-md border-2 border-white/20 flex items-center justify-center overflow-hidden">
+              <img
+                src="/images/con-org-logo/college-of-nursing.jpg"
+                alt="BulSU College of Nursing Logo"
+                class="w-full h-full object-cover rounded-full" />
+            </div>
+
+            <div
+              class="flex items-center gap-space-xs text-tertiary-fixed-dim uppercase tracking-widest font-label-sm text-label-sm mb-space-xxs">
+              <span>Collegiate Directory</span>
+              <span
+                class="inline-block w-1 h-1 rounded-full bg-tertiary-fixed-dim"></span>
+              <span>Governance &amp; Alliances</span>
+            </div>
+
+            <h1
+              class="font-headline-lg text-headline-lg md:text-[40px] md:leading-[48px] text-surface font-semibold max-w-3xl font-serif">
+              CON Community
+            </h1>
+
+            <p
+              class="font-body-md text-body-md text-surface-variant max-w-2xl mt-space-xs">
+              Empowering student leadership, accredited nursing organizations,
+              and esteemed academic stewards championing compassionate
+              healthcare beyond the walls.
+            </p>
+          </div>
+        </section>
+
+        <!-- Main Body: Organization Directory Grid -->
+        <section
+          class="max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl">
+          <div class="flex flex-col space-y-space-3xl">
+            <section class="scroll-mt-28" id="collegiate-heraldry">
+              <!-- Section Header + Live Search Filter -->
+              <div
+                class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md border-b border-surface-variant/40">
+                <div>
+                  <div
+                    class="flex items-center gap-space-xxs text-secondary font-label-sm text-label-sm uppercase tracking-wide">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >verified</span
+                    >
+                    <span>Accredited Student Bodies &amp; Councils</span>
+                  </div>
+                  <h2
+                    class="font-headline-lg text-headline-lg text-on-surface font-semibold font-serif">
+                    Local Student Councils &amp; Organizations
+                  </h2>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xxs">
+                    The official emblems, publications, academic guilds, and
+                    cultural councils serving the BulSU College of Nursing.
+                  </p>
+                </div>
+
+                <!-- Directory Search Input -->
+                <div class="relative w-full md:w-72 shrink-0">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
+                    >search</span
+                  >
+                  <input
+                    type="text"
+                    id="directory-search"
+                    placeholder="Search organizations..."
+                    class="w-full pl-10 pr-4 py-2 text-sm border border-outline-variant rounded-xl bg-surface-container-lowest focus:ring-2 focus:ring-secondary focus:outline-none" />
+                </div>
+              </div>
+
+              <!-- Organizations Cards Grid -->
+              <div
+                id="organizations-grid"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter mt-space-lg">
+                <!-- 1. Local Student Council -->
+                <div
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="Local Student Council"
+                      src="/images/con-org-logo/local-student-council.jpg" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-primary text-on-primary font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Governance Council</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                    Local Student Council
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    CON LSC • Student Body
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                    Ang opisyal na pamunuan ng mga mag-aaral o student
+                    government ng BulSU College of Nursing na nangunguna sa
+                    pagtataguyod ng kapakanan, mga karapatan, at mga programa
+                    para sa buong komunidad ng mga nursing student.
+                  </p>
+                </div>
+
+                <!-- 2. Knightingale Society (Interactive Link to Subpage) -->
+                <a
+                  href="/pages/con-community/organizations/knightingale-society.html"
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="Knightingale Society"
+                      src="/images/con-org-logo/knightingale-society.png" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Leadership Society</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors flex items-center gap-1">
+                    <span>Knightingale Society</span>
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    Cadence Chapter
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs flex-grow">
+                    Isang organisasyong pang-akademiko o panlipunan na
+                    ipinangalan kay Florence Nightingale, na nakatutok sa
+                    pagtataguyod ng kahusayan sa nursing at pagkakaisa.
+                  </p>
+                  <span
+                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
+                    View Organization Profile
+                    <span class="material-symbols-outlined text-[15px]"
+                      >arrow_forward</span
+                    >
+                  </span>
+                </a>
+
+                <!-- 3. CORTEX -->
+                <div
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="CORTEX"
+                      src="/images/con-org-logo/cortex-the-con-academic-society.jpg" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Academic Society</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                    CORTEX
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    CON Academic Society • Est. 2026
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                    Isang organisasyong pang-akademiko na naglalayong patalasin
+                    ang talino at pagbutihin ang performans ng mga nursing
+                    student sa kanilang pag-aaral.
+                  </p>
+                </div>
+
+                <!-- 4. The Nurses' Notes -->
+                <div
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="The Nurses' Notes"
+                      src="/images/con-org-logo/the-nurses-notes.jpg" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-primary text-on-primary font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Official Publication</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                    The Nurses' Notes
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    CON Journalism Guild • Est. 2007
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                    Ang opisyal na pahayagan ng mga mag-aaral sa BulSU College
+                    of Nursing na nagbibigay-impormasyon sa pamamagitan ng
+                    campus journalism at malikhaing pagsusulat.
+                  </p>
+                </div>
+
+                <!-- 5. CON Red Cross Youth Council -->
+                <div
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="CON Red Cross Youth Council"
+                      src="/images/con-org-logo/red-cross-youth-council.jpg" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Humanitarian Council</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                    CON Red Cross Youth Council
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    CON RCYC • Philippine Red Cross
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                    Ang opisyal na sangay ng Red Cross Youth sa kolehiyo na
+                    nagtataguyod ng bolunterismo, kaligtasan sa kalusugan, at
+                    gawaing makatao.
+                  </p>
+                </div>
+
+                <!-- 6. Pacemaker All-Stars -->
+                <div
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="Pacemaker All-Stars"
+                      src="/images/con-org-logo/pacemaker-all-stars.jpg" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Culture &amp; Performing Arts</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                    Pacemaker All-Stars
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    PMAS Dance Troupe • Est. 2008
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                    Isang natatanging organisasyon o grupo sa kolehiyo na
+                    karaniwang nagtataguyod ng sining, talento, o pangkalahatang
+                    pag-unlad ng mga estudyante.
+                  </p>
+                </div>
+
+                <!-- 7. LUNGS -->
+                <div
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="LUNGS - Lydians United Nursing Giocoso Singers"
+                      src="/images/con-org-logo/lungs-lydians-united-nursing-giocoso-singers.png" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Musical &amp; Choral Guild</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                    LUNGS
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    Lydians United Nursing Giocoso Singers
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                    Ang opisyal na chorale o grupong pang-musika ng BulSU
+                    College of Nursing na nagtatampok sa talento sa pag-awit ng
+                    mga nursing student.
+                  </p>
+                </div>
+
+                <!-- 8. Unang Hakbang (Interactive Link to Subpage) -->
+                <a
+                  href="/pages/con-community/organizations/unang-hakbang.html"
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
+                  <div
+                    class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
+                    <img
+                      loading="lazy"
+                      class="w-full h-full object-contain rounded-full"
+                      alt="Unang Hakbang"
+                      src="/images/con-org-logo/unang-hakbang.jpg" />
+                  </div>
+                  <span
+                    class="inline-block px-space-xs py-space-xxs rounded-full bg-primary text-on-primary font-label-sm text-label-sm mb-space-xs font-semibold"
+                    >Community Outreach</span
+                  >
+                  <h3
+                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors flex items-center gap-1">
+                    <span>Unang Hakbang</span>
+                  </h3>
+                  <p
+                    class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
+                    CON Community Extension • Est. 2020
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs flex-grow">
+                    Isang organisasyon o inisyatiba na gumagabay at sumusuporta
+                    sa mga bagong freshman habang sinisimulan nila ang kanilang
+                    paglalakbay sa kolehiyo.
+                  </p>
+                  <span
+                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
+                    View Organization Profile
+                    <span class="material-symbols-outlined text-[15px]"
+                      >arrow_forward</span
+                    >
+                  </span>
+                </a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Dynamic Footer (Injected by components.js) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Shared Layout, Navigation & Favicon Script -->
+    <script src="/components.js"></script>
+
+    <!-- Live Search Filter for Organizations -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.getElementById("directory-search");
+        const cards = document.querySelectorAll(".org-card");
+
+        if (searchInput) {
+          searchInput.addEventListener("input", (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            cards.forEach((card) => {
+              const text = card.textContent.toLowerCase();
+              card.style.display = text.includes(query) ? "" : "none";
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

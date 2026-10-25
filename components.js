@@ -119,7 +119,7 @@ const headerHTML = `
           ><a
             class="text-surface-variant hover:text-surface transition-colors flex items-center h-full px-space-xs font-label-md text-label-md"
             data-path="con-community"
-            href="#"
+            href="/pages/con-community/con-community.html"
             >CON Community</a
           ><a
             class="text-surface-variant hover:text-surface transition-colors flex items-center h-full px-space-xs font-label-md text-label-md"
@@ -190,7 +190,7 @@ const headerHTML = `
           ><a
             class="text-surface-variant hover:text-surface hover:bg-primary transition-all py-space-sm px-space-md rounded-DEFAULT font-label-md text-label-md flex items-center justify-between"
             data-path="con-community"
-            href="#"
+            href="/pages/con-community/con-community.html"
             ><span class="">CON Community</span
             ><span
               class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim"

@@ -1366,6 +1366,10 @@ main > :last-child {
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1386,12 +1390,28 @@ main > :last-child {
   bottom: -3rem;
 }
 
+.-bottom-24 {
+  bottom: -6rem;
+}
+
+.-left-20 {
+  left: -5rem;
+}
+
 .-right-12 {
   right: -3rem;
 }
 
+.-right-16 {
+  right: -4rem;
+}
+
 .-right-6 {
   right: -1.5rem;
+}
+
+.-top-20 {
+  top: -5rem;
 }
 
 .-top-24 {
@@ -1442,20 +1462,16 @@ main > :last-child {
   top: 50%;
 }
 
-.-bottom-24 {
-  bottom: -6rem;
+.-left-16 {
+  left: -4rem;
 }
 
-.-left-20 {
-  left: -5rem;
+.-right-20 {
+  right: -5rem;
 }
 
-.-right-16 {
-  right: -4rem;
-}
-
-.-top-20 {
-  top: -5rem;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .-z-10 {
@@ -1601,10 +1617,6 @@ main > :last-child {
   margin-top: 4rem;
 }
 
-.mt-space-xl {
-  margin-top: 2rem;
-}
-
 .mt-space-lg {
   margin-top: 1.5rem;
 }
@@ -1613,8 +1625,24 @@ main > :last-child {
   margin-top: 0.75rem;
 }
 
+.mt-space-xl {
+  margin-top: 2rem;
+}
+
 .mt-space-xs {
   margin-top: 0.5rem;
+}
+
+.mb-space-3xl {
+  margin-bottom: 4rem;
+}
+
+.mt-space-xxs {
+  margin-top: 0.25rem;
+}
+
+.mt-space-md {
+  margin-top: 1rem;
 }
 
 .line-clamp-2 {
@@ -1633,6 +1661,10 @@ main > :last-child {
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -1663,12 +1695,12 @@ main > :last-child {
   aspect-ratio: 4/5;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
 .aspect-auto {
   aspect-ratio: auto;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
 .h-10 {
@@ -1715,14 +1747,6 @@ main > :last-child {
   height: 2rem;
 }
 
-.h-\[350px\] {
-  height: 350px;
-}
-
-.h-full {
-  height: 100%;
-}
-
 .h-80 {
   height: 20rem;
 }
@@ -1731,8 +1755,28 @@ main > :last-child {
   height: 24rem;
 }
 
+.h-\[350px\] {
+  height: 350px;
+}
+
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .min-h-\[360px\] {
@@ -1779,8 +1823,20 @@ main > :last-child {
   width: 16rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .w-8 {
   width: 2rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .w-\[700px\] {
@@ -1795,36 +1851,28 @@ main > :last-child {
   width: 100%;
 }
 
-.w-80 {
-  width: 20rem;
+.w-1 {
+  width: 0.25rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-20 {
+  width: 5rem;
 }
 
-.w-2\.5 {
-  width: 0.625rem;
+.w-28 {
+  width: 7rem;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-56 {
-  width: 14rem;
-}
-
-.w-72 {
-  width: 18rem;
+.w-9 {
+  width: 2.25rem;
 }
 
 .min-w-0 {
   min-width: 0px;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .max-w-3xl {
@@ -1853,10 +1901,6 @@ main > :last-child {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
 }
 
 .flex-1 {
@@ -1936,16 +1980,20 @@ main > :last-child {
   resize: both;
 }
 
+.scroll-mt-28 {
+  scroll-margin-top: 7rem;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row-reverse {
@@ -2020,6 +2068,10 @@ main > :last-child {
   gap: 1.5rem;
 }
 
+.gap-space-3xl {
+  gap: 4rem;
+}
+
 .gap-space-lg {
   gap: 1.5rem;
 }
@@ -2044,14 +2096,22 @@ main > :last-child {
   gap: 0.25rem;
 }
 
-.gap-space-3xl {
-  gap: 4rem;
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-space-3xl > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+}
+
+.space-y-space-xs > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .self-end {
@@ -2112,6 +2172,10 @@ main > :last-child {
   border-width: 4px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -2168,6 +2232,10 @@ main > :last-child {
   border-color: rgb(213 227 255 / var(--tw-border-opacity, 1));
 }
 
+.border-secondary-fixed\/30 {
+  border-color: rgb(213 227 255 / 0.3);
+}
+
 .border-surface-container-high {
   --tw-border-opacity: 1;
   border-color: rgb(238 232 215 / var(--tw-border-opacity, 1));
@@ -2181,6 +2249,10 @@ main > :last-child {
 .border-surface-dim {
   --tw-border-opacity: 1;
   border-color: rgb(224 218 201 / var(--tw-border-opacity, 1));
+}
+
+.border-surface-variant\/40 {
+  border-color: rgb(233 226 210 / 0.4);
 }
 
 .border-tertiary-fixed-dim {
@@ -2200,12 +2272,12 @@ main > :last-child {
   border-color: rgb(255 255 255 / 0.15);
 }
 
-.border-secondary-fixed\/30 {
-  border-color: rgb(213 227 255 / 0.3);
+.border-surface-variant\/30 {
+  border-color: rgb(233 226 210 / 0.3);
 }
 
-.border-surface-variant\/40 {
-  border-color: rgb(233 226 210 / 0.4);
+.border-white\/20 {
+  border-color: rgb(255 255 255 / 0.2);
 }
 
 .border-t-secondary {
@@ -2282,9 +2354,17 @@ main > :last-child {
   background-color: rgb(24 95 170 / var(--tw-bg-opacity, 1));
 }
 
+.bg-secondary-container\/10 {
+  background-color: rgb(117 173 254 / 0.1);
+}
+
 .bg-secondary-fixed {
   --tw-bg-opacity: 1;
   background-color: rgb(213 227 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-secondary-fixed-dim\/10 {
+  background-color: rgb(166 200 255 / 0.1);
 }
 
 .bg-secondary-fixed-dim\/30 {
@@ -2335,6 +2415,10 @@ main > :last-child {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-surface-container-lowest\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
 .bg-surface-container-lowest\/95 {
   background-color: rgb(255 255 255 / 0.95);
 }
@@ -2357,16 +2441,21 @@ main > :last-child {
   background-color: rgb(255 255 255 / 0.05);
 }
 
-.bg-secondary-container\/10 {
-  background-color: rgb(117 173 254 / 0.1);
+.bg-surface-container-lowest\/15 {
+  background-color: rgb(255 255 255 / 0.15);
 }
 
-.bg-secondary-fixed-dim\/10 {
-  background-color: rgb(166 200 255 / 0.1);
+.bg-surface\/10 {
+  background-color: rgb(255 249 236 / 0.1);
 }
 
-.bg-surface-container-lowest\/10 {
-  background-color: rgb(255 255 255 / 0.1);
+.bg-tertiary-fixed-dim {
+  --tw-bg-opacity: 1;
+  background-color: rgb(149 204 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-tertiary-fixed-dim\/15 {
+  background-color: rgb(149 204 255 / 0.15);
 }
 
 .bg-gradient-to-b {
@@ -2375,6 +2464,10 @@ main > :last-child {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-\[\#1e3a6a\] {
@@ -2395,6 +2488,12 @@ main > :last-child {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-primary-container {
+  --tw-gradient-from: #12284b var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(18 40 75 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-\[\#12284b\] {
   --tw-gradient-to: rgb(18 40 75 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #12284b var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -2410,12 +2509,21 @@ main > :last-child {
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 19 49 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
+.via-tertiary-container {
+  --tw-gradient-to: rgb(0 43 70 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #002b46 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .to-\[\#0d1b33\] {
   --tw-gradient-to: #0d1b33 var(--tw-gradient-to-position);
 }
 
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+
+.to-secondary {
+  --tw-gradient-to: #185faa var(--tw-gradient-to-position);
 }
 
 .object-contain {
@@ -2470,6 +2578,10 @@ main > :last-child {
 
 .p-space-xl {
   padding: 2rem;
+}
+
+.p-space-xxs {
+  padding: 0.25rem;
 }
 
 .px-2 {
@@ -2582,6 +2694,11 @@ main > :last-child {
   padding-bottom: 2rem;
 }
 
+.py-space-2xl {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-space-3xl {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -2602,19 +2719,14 @@ main > :last-child {
   padding-bottom: 0.75rem;
 }
 
-.py-space-xxs {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-space-2xl {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-space-xs {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-space-xxs {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-16 {
@@ -2685,12 +2797,20 @@ main > :last-child {
   padding-top: 1rem;
 }
 
+.pt-space-sm {
+  padding-top: 0.75rem;
+}
+
 .pt-space-xl {
   padding-top: 2rem;
 }
 
-.pt-space-sm {
-  padding-top: 0.75rem;
+.pb-space-2xl {
+  padding-bottom: 3rem;
+}
+
+.pt-space-3xl {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -2743,6 +2863,10 @@ main > :last-child {
 
 .font-title-sm {
   font-family: Plus Jakarta Sans;
+}
+
+.font-headline-sm {
+  font-family: Newsreader;
 }
 
 .text-2xl {
@@ -2889,6 +3013,12 @@ main > :last-child {
   line-height: 1rem;
 }
 
+.text-headline-sm {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2927,6 +3057,10 @@ main > :last-child {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-\[\#0055a0\] {
@@ -3044,6 +3178,10 @@ main > :last-child {
   color: rgb(233 226 210 / var(--tw-text-opacity, 1));
 }
 
+.text-surface-variant\/90 {
+  color: rgb(233 226 210 / 0.9);
+}
+
 .text-tertiary-container {
   --tw-text-opacity: 1;
   color: rgb(0 43 70 / var(--tw-text-opacity, 1));
@@ -3075,10 +3213,6 @@ main > :last-child {
   color: rgb(255 255 255 / 0.8);
 }
 
-.text-surface-variant\/90 {
-  color: rgb(233 226 210 / 0.9);
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -3094,6 +3228,14 @@ main > :last-child {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-95 {
+  opacity: 0.95;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-\[0_4px_20px_rgba\(0\2c 19\2c 49\2c 0\.25\)\] {
@@ -3124,6 +3266,22 @@ main > :last-child {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0_2px_8px_-2px_rgba\(18\2c 40\2c 75\2c 0\.1\)\] {
+  --tw-shadow: 0 2px 8px -2px rgba(18,40,75,0.1);
+  --tw-shadow-colored: 0 2px 8px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .ring {
@@ -3203,6 +3361,12 @@ main > :last-child {
 
 .transition-transform {
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -3330,6 +3494,10 @@ main > :last-child {
   border-color: rgb(24 95 170 / var(--tw-border-opacity, 1));
 }
 
+.hover\:border-secondary\/50:hover {
+  border-color: rgb(24 95 170 / 0.5);
+}
+
 .hover\:bg-\[\#004480\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 68 128 / var(--tw-bg-opacity, 1));
@@ -3378,6 +3546,28 @@ main > :last-child {
   background-color: rgb(255 255 255 / 0.2);
 }
 
+.hover\:bg-secondary-container:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 173 254 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-surface-container:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 237 221 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-surface-container-highest\/20:hover {
+  background-color: rgb(233 226 210 / 0.2);
+}
+
+.hover\:bg-surface\/10:hover {
+  background-color: rgb(255 249 236 / 0.1);
+}
+
+.hover\:bg-surface\/20:hover {
+  background-color: rgb(255 249 236 / 0.2);
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(0 19 49 / var(--tw-text-opacity, 1));
@@ -3391,6 +3581,16 @@ main > :last-child {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-on-secondary-container:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 64 122 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-tertiary-fixed-dim:hover {
+  --tw-text-opacity: 1;
+  color: rgb(149 204 255 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
@@ -3482,6 +3682,10 @@ main > :last-child {
   color: rgb(255 249 236 / var(--tw-text-opacity, 1));
 }
 
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
 .has-\[\:checked\]\:border-secondary:has(:checked) {
   --tw-border-opacity: 1;
   border-color: rgb(24 95 170 / var(--tw-border-opacity, 1));
@@ -3541,6 +3745,10 @@ main > :last-child {
     flex-direction: row;
   }
 
+  .sm\:items-end {
+    align-items: flex-end;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -3559,6 +3767,10 @@ main > :last-child {
 
   .sm\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .sm\:gap-space-sm {
+    gap: 0.75rem;
   }
 
   .sm\:self-center {
@@ -3587,6 +3799,10 @@ main > :last-child {
     padding-bottom: 2.5rem;
   }
 
+  .sm\:text-left {
+    text-align: left;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3599,6 +3815,18 @@ main > :last-child {
 }
 
 @media (min-width: 768px) {
+  .md\:h-24 {
+    height: 6rem;
+  }
+
+  .md\:w-24 {
+    width: 6rem;
+  }
+
+  .md\:w-72 {
+    width: 18rem;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3644,6 +3872,10 @@ main > :last-child {
 
   .md\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .md\:leading-\[48px\] {
+    line-height: 48px;
   }
 }
 
