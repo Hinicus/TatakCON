@@ -1490,6 +1490,30 @@ main > :last-child {
   top: 0.75rem;
 }
 
+.-bottom-16 {
+  bottom: -4rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
+.top-\[26px\] {
+  top: 26px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1500,6 +1524,14 @@ main > :last-child {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .order-1 {
@@ -1803,6 +1835,18 @@ main > :last-child {
   height: 6rem;
 }
 
+.h-1\.5 {
+  height: 0.375rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-\[340px\] {
+  height: 340px;
+}
+
 .min-h-\[360px\] {
   min-height: 360px;
 }
@@ -1897,6 +1941,10 @@ main > :last-child {
 
 .w-px {
   width: 1px;
+}
+
+.w-1\.5 {
+  width: 0.375rem;
 }
 
 .min-w-0 {
@@ -2036,6 +2084,10 @@ main > :last-child {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -2066,6 +2118,10 @@ main > :last-child {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -2138,6 +2194,10 @@ main > :last-child {
 
 .gap-space-xxs {
   gap: 0.25rem;
+}
+
+.gap-space-2xl {
+  gap: 3rem;
 }
 
 .gap-x-6 {
@@ -2213,6 +2273,10 @@ main > :last-child {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .scroll-smooth {
@@ -2657,6 +2721,28 @@ main > :last-child {
   background-color: rgb(186 26 26 / 0.8);
 }
 
+.bg-outline-variant {
+  --tw-bg-opacity: 1;
+  background-color: rgb(196 198 207 / var(--tw-bg-opacity, 1));
+}
+
+.bg-primary\/40 {
+  background-color: rgb(0 19 49 / 0.4);
+}
+
+.bg-secondary-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 173 254 / var(--tw-bg-opacity, 1));
+}
+
+.bg-secondary-container\/20 {
+  background-color: rgb(117 173 254 / 0.2);
+}
+
+.bg-surface-variant\/60 {
+  background-color: rgb(233 226 210 / 0.6);
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2746,6 +2832,12 @@ main > :last-child {
 .from-error\/40 {
   --tw-gradient-from: rgb(186 26 26 / 0.4) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(186 26 26 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary\/90 {
+  --tw-gradient-from: rgb(0 19 49 / 0.9) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 19 49 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2889,6 +2981,10 @@ main > :last-child {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-space-sm {
+  padding: 0.75rem;
 }
 
 .px-2 {
@@ -3046,6 +3142,11 @@ main > :last-child {
   padding-bottom: 1rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -3132,6 +3233,18 @@ main > :last-child {
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pb-space-sm {
+  padding-bottom: 0.75rem;
+}
+
+.pb-space-xs {
+  padding-bottom: 0.5rem;
+}
+
+.pt-space-xs {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -3345,6 +3458,10 @@ main > :last-child {
   line-height: 1.75rem;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3379,6 +3496,10 @@ main > :last-child {
 
 .leading-snug {
   line-height: 1.375;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .tracking-tight {
@@ -3576,6 +3697,20 @@ main > :last-child {
   color: rgb(147 0 10 / var(--tw-text-opacity, 1));
 }
 
+.text-on-secondary-container {
+  --tw-text-opacity: 1;
+  color: rgb(0 64 122 / var(--tw-text-opacity, 1));
+}
+
+.text-outline {
+  --tw-text-opacity: 1;
+  color: rgb(117 119 127 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary\/30 {
+  color: rgb(24 95 170 / 0.3);
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3697,6 +3832,10 @@ main > :last-child {
 .ring-white {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1));
+}
+
+.ring-white\/10 {
+  --tw-ring-color: rgb(255 255 255 / 0.1);
 }
 
 .blur-2xl {
@@ -4008,6 +4147,11 @@ main > :last-child {
   color: rgb(140 193 233 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-on-surface:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 28 18 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -4075,6 +4219,12 @@ main > :last-child {
 .group:hover .group-hover\:scale-105 {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4311,8 +4461,20 @@ main > :last-child {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .md\:h-24 {
     height: 6rem;
+  }
+
+  .md\:h-44 {
+    height: 11rem;
   }
 
   .md\:w-24 {
@@ -4333,6 +4495,10 @@ main > :last-child {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -4373,6 +4539,10 @@ main > :last-child {
     padding-bottom: 4rem;
   }
 
+  .md\:font-display-hero {
+    font-family: Newsreader;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -4384,6 +4554,10 @@ main > :last-child {
 
   .md\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
   }
 
   .md\:leading-\[48px\] {
@@ -4412,6 +4586,14 @@ main > :last-child {
     grid-column: span 1 / span 1;
   }
 
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
   .lg\:col-start-1 {
     grid-column-start: 1;
   }
@@ -4430,6 +4612,10 @@ main > :last-child {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -4464,8 +4650,16 @@ main > :last-child {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:overflow-visible {
+    overflow: visible;
   }
 
   .lg\:p-12 {
@@ -4492,6 +4686,10 @@ main > :last-child {
     padding-bottom: 4rem;
   }
 
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -4499,6 +4697,10 @@ main > :last-child {
 }
 
 @media (min-width: 1280px) {
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .xl\:gap-12 {
     gap: 3rem;
   }

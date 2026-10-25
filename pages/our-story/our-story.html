@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story - TatakCON</title>
+
+    <!-- Compiled Tailwind & Global CSS -->
+    <link href="/global.css" rel="stylesheet" />
+
+    <!-- Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet" />
+  </head>
+
+  <body
+    class="min-h-screen bg-surface font-body-md text-on-surface flex flex-col antialiased selection:bg-clear-skies selection:text-deep-ocean">
+    <!-- Dynamic Header (Injected by components.js) -->
+    <div id="header-placeholder"></div>
+
+    <main class="w-full flex-grow bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- Story Hero Banner -->
+        <section
+          class="relative w-full overflow-hidden py-space-3xl px-margin-mobile md:px-margin-tablet lg:px-margin"
+          style="
+            background: radial-gradient(
+              circle at 50% 20%,
+              rgb(30, 58, 106) 0%,
+              rgb(18, 40, 75) 60%,
+              rgb(13, 27, 51) 100%
+            );
+          ">
+          <div
+            class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[340px] bg-secondary-container/20 rounded-full blur-3xl"></div>
+          <div
+            class="pointer-events-none absolute -bottom-16 right-10 w-96 h-96 bg-primary/40 rounded-full blur-2xl"></div>
+
+          <div
+            class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
+            <div
+              class="w-14 h-14 rounded-full flex items-center justify-center mb-space-sm shadow-md bg-white/10 ring-1 ring-white/15 text-tertiary-fixed-dim">
+              <span class="material-symbols-outlined text-[28px]"
+                >menu_book</span
+              >
+            </div>
+            <div
+              class="inline-flex items-center gap-space-xs px-space-md py-space-xxs rounded-full mb-space-md bg-white/10 ring-1 ring-white/10 text-tertiary-fixed-dim">
+              <span class="material-symbols-outlined text-[16px]"
+                >workspace_premium</span
+              >
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest font-semibold text-tertiary-fixed-dim"
+                >BulSU College of Nursing • Est. 2003</span
+              >
+            </div>
+            <h1
+              class="font-headline-lg md:font-display-hero text-headline-lg md:text-[48px] text-surface tracking-tight mb-space-xs font-serif font-bold">
+              Our Story
+            </h1>
+            <p
+              class="font-body-md text-body-md text-surface-variant/90 max-w-2xl mt-space-sm">
+              The Official History and Academic Journey of Bulacan State
+              University - College of Nursing (BulSU-CON)
+            </p>
+          </div>
+        </section>
+
+        <!-- Two-Column Main Content & Sticky Index -->
+        <section
+          class="max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+            <!-- Left Sub-Navigation Rail (Sticky TOC) -->
+            <aside class="lg:col-span-3 sticky top-28 z-20">
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm border border-surface-variant/40">
+                <div
+                  class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-variant/40">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"
+                    >Contents</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-outline text-[18px]"
+                    >format_list_bulleted</span
+                  >
+                </div>
+                <nav
+                  class="flex flex-row lg:flex-col gap-space-xs overflow-x-auto lg:overflow-visible pb-space-xs lg:pb-0"
+                  id="story-toc">
+                  <a
+                    class="toc-link group flex items-center justify-between px-space-md py-space-sm rounded-full bg-secondary-fixed text-primary font-label-md text-label-md shadow-xs transition-all"
+                    href="#history">
+                    <span class="flex items-center gap-space-xs">
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                      History
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      >arrow_forward</span
+                    >
+                  </a>
+                  <a
+                    class="toc-link group flex items-center justify-between px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-all"
+                    href="#background">
+                    <span class="flex items-center gap-space-xs">
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+                      Background
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity"
+                      >arrow_forward</span
+                    >
+                  </a>
+                  <a
+                    class="toc-link group flex items-center justify-between px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-all"
+                    href="#evolution">
+                    <span class="flex items-center gap-space-xs">
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+                      Evolution
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity"
+                      >arrow_forward</span
+                    >
+                  </a>
+                  <a
+                    class="toc-link group flex items-center justify-between px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-all"
+                    href="#fun-facts">
+                    <span class="flex items-center gap-space-xs">
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+                      Fun Facts
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </nav>
+                <!-- Quick Contact Quote Box -->
+                <div
+                  class="mt-space-lg pt-space-md bg-surface-container-low rounded-xl p-space-md hidden lg:block border border-surface-variant/40">
+                  <span
+                    class="material-symbols-outlined text-secondary text-[24px]"
+                    >history_edu</span
+                  >
+                  <p
+                    class="font-headline-sm text-lg text-primary mt-space-xs italic font-serif">
+                    "We heal through science; we elevate through presence."
+                  </p>
+                  <p
+                    class="font-caption text-caption text-on-surface-variant mt-space-xs font-semibold">
+                    BulSU College of Nursing Tradition
+                  </p>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Right Main Content Canvas -->
+            <div class="lg:col-span-9 flex flex-col gap-space-2xl">
+              <!-- Section: History -->
+              <article
+                class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-3xl shadow-sm border border-secondary-fixed/30 scroll-mt-28"
+                id="history">
+                <div
+                  class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-lg">
+                  <div>
+                    <div
+                      class="inline-flex items-center gap-space-xxs text-secondary mb-space-xxs">
+                      <span class="material-symbols-outlined text-[16px]"
+                        >menu_book</span
+                      >
+                    </div>
+                    <h2
+                      class="font-headline-lg text-[28px] md:text-[34px] text-primary tracking-tight font-serif italic">
+                      History of the College of Nursing
+                    </h2>
+                  </div>
+                  <span
+                    class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-start font-semibold">
+                    <span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      >verified</span
+                    >
+                    Chartered December 2003 • B.O.R. Res. No. 65
+                  </span>
+                </div>
+
+                <!-- Featured Archival Photo & Text Split -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-lg items-center">
+                  <div
+                    class="md:col-span-5 relative group overflow-hidden rounded-2xl shadow-sm bg-surface-container">
+                    <img
+                      class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+                      alt="Vintage black and white photograph of collegiate nursing graduates in white clinical uniforms standing proudly on campus steps"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHK1KrO73fsCAuxZP8zEkcoUNLj5_Qpf0gZYxSdbCEAWjlEfnvPSzE69gpjA0BgmuaeQh29TPAuaHARDldum3K7FJ0ivCcblFltgw-Ma5zw-pGfD8n56OLRaxS2q1YO8ga3L45cujS577Hj83zK1zBSwsSl5g-ZimctCSKbhiJrbUaC0AVMoW3dUIyLh3K0Z_Gq9iKk1lp79uVObbVVchWsOvqUzsTlugZHBwsRqsL4S2vTqBH2y5-" />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex flex-col justify-end p-space-md text-surface">
+                      <span
+                        class="font-label-sm text-label-sm text-tertiary-fixed-dim font-bold"
+                        >Pioneering Cohort • SY 2004–2005</span
+                      >
+                      <p
+                        class="font-caption text-caption text-surface-variant mt-1">
+                        Initial cohort of nearly 200 student nurses across 4
+                        sections.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="md:col-span-7 flex flex-col gap-space-sm">
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                      Nag-aalok ang pamantasan ng apat na taong kurso sa
+                      Bachelor of Science in Nursing. Opisyal na itinatag ang
+                      Bulacan State University - College of Nursing (BulSU-CON)
+                      noong Disyembre 2003 sa pamamagitan ng
+                      <strong class="text-primary font-semibold"
+                        >Board of Regents (B.O.R.) Resolution No. 65, s.
+                        2003</strong
+                      >, bilang tugon sa lumalaking pangangailangan para sa mga
+                      de-kalidad at kompetitibong nars sa lokal at internasyonal
+                      na komunidad.
+                    </p>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                      Pormal itong binuksan sa unang semester ng Taong Panuruan
+                      2004-2005 sa ilalim ng College of Arts and Sciences (CAS)
+                      sa pamumuno ni Dr. Norma C. Morala, na may halos 200
+                      mag-aaral na nahahati sa apat na seksyon.
+                    </p>
+                    <div class="flex items-center gap-space-md pt-space-xs">
+                      <div class="flex flex-col">
+                        <span
+                          class="font-headline-md text-2xl font-bold text-secondary font-serif"
+                          >~200</span
+                        >
+                        <span
+                          class="font-caption text-caption text-on-surface-variant uppercase font-semibold"
+                          >Pioneering Students (2004)</span
+                        >
+                      </div>
+                      <div class="h-8 w-px bg-surface-variant/60"></div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-headline-md text-2xl font-bold text-secondary font-serif"
+                          >Level I</span
+                        >
+                        <span
+                          class="font-caption text-caption text-on-surface-variant uppercase font-semibold"
+                          >AACCUP Accredited</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+                  Noong Pebrero 15, 2005, sa bisa ng
+                  <strong class="text-primary font-semibold"
+                    >Resolution No. 4, s. 2005</strong
+                  >, nahati ang CAS sa tatlong instituto at isang
+                  kolehiyo—kabilang ang
+                  <strong class="text-primary font-semibold"
+                    >College of Nursing</strong
+                  >
+                  bilang isang ganap at malayang kolehiyo. Nadoble ang bilang ng
+                  mga nag-enroll sa sumunod na taon, kaya't lumaki sa walong
+                  seksyon ang unang taon. Pinangunahan ito ng kauna-unahang
+                  dekano na si
+                  <strong class="text-primary font-semibold"
+                    >Ms. Adelaida G. Borbe, RN, MSN</strong
+                  >
+                  (2005–2010), na sinundan kalaunan ni
+                  <strong class="text-primary font-semibold"
+                    >Dr. Loida O. Crespo, MSN, PhD</strong
+                  >
+                  at ng Associate Dean na si
+                  <strong class="text-primary font-semibold"
+                    >Ms. Jane Marie Sumodlayon, RN, MAN</strong
+                  >. Sa kasalukuyan, patuloy na pinatitibay ng kolehiyo ang
+                  kahusayan sa edukasyon, pananaliksik, at pangangalagang
+                  pangkalusugan sa tulong ng mga mahuhusay na guro.
+                </p>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Bilang patunay ng dedikasyon sa de-kalidad na edukasyon,
+                  pumasa ang kolehiyo sa AACCUP Level I accreditation noong
+                  Disyembre 6, 2011. Upang matulungan din ang mga estudyanteng
+                  kapus-palad sa pinansyal na aspekto, naglunsad ang CON ng mga
+                  kursong TESDA (Massage Therapy, Health Care Services, at
+                  Caregiving) simula noong Hunyo 2014, na accredited noong 2015.
+                  Naging tulay ito upang mas mapalawak ang oportunidad sa mga
+                  nagnanais maging bahagi ng larangan ng kalusugan.
+                </p>
+              </article>
+
+              <!-- Section: Background & Evolution Split Bento -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Background Card -->
+                <article
+                  class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between border border-surface-variant/40 scroll-mt-28"
+                  id="background">
+                  <div>
+                    <div class="flex items-center justify-between mb-space-sm">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-[18px]"
+                          >domain</span
+                        >
+                      </span>
+                    </div>
+                    <h3
+                      class="font-headline-md text-xl font-bold text-primary mb-space-xs font-serif">
+                      Background &amp; Charter
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">
+                      BulSU-CON originated from an urgent institutional
+                      imperative to produce nurses grounded in clinical
+                      precision and humanistic care. Conceived under B.O.R.
+                      Resolution No. 65, s. 2003, it transitioned smoothly from
+                      its gestational period within the College of Arts and
+                      Sciences into an independent, prestigious academic pillar
+                      of Bulacan State University.
+                    </p>
+                    <div
+                      class="p-space-sm rounded-xl bg-surface-container mb-space-md">
+                      <span
+                        class="font-label-sm text-label-sm text-primary block mb-space-xxs font-semibold"
+                        >Core Institutional Mandate</span
+                      >
+                      <p
+                        class="font-caption text-caption text-on-surface-variant">
+                        Developing world-class, globally competitive, and
+                        ethically committed professional nurses accessible to
+                        the community.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-space-sm border-t border-surface-variant/40 font-semibold">
+                    <span>Charter: B.O.R. Res. No. 4, s. 2005</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >verified_user</span
+                    >
+                  </div>
+                </article>
+
+                <!-- Evolution Card -->
+                <article
+                  class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col justify-between border border-surface-variant/40 scroll-mt-28"
+                  id="evolution">
+                  <div>
+                    <div class="flex items-center justify-between mb-space-sm">
+                      <span
+                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-[18px]"
+                          >trending_up</span
+                        >
+                      </span>
+                    </div>
+                    <h3
+                      class="font-headline-md text-xl font-bold text-primary mb-space-xs font-serif">
+                      Pedagogical Evolution &amp; Laddered Tracks
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">
+                      On December 6, 2011, the College earned prestigious AACCUP
+                      Level I Accreditation. Demonstrating deep responsiveness
+                      to socioeconomic accessibility, CON introduced laddered
+                      National Competency (NC) courses in Caregiving, Health
+                      Care Services, and Massage Therapy (operational June 2014,
+                      TESDA-accredited June 2015) enabling progressive
+                      healthcare career pathways.
+                    </p>
+                    <div
+                      class="p-space-sm rounded-xl bg-surface-container mb-space-md">
+                      <span
+                        class="font-label-sm text-label-sm text-primary block mb-space-xxs font-semibold"
+                        >TESDA &amp; AACCUP Endorsement</span
+                      >
+                      <p
+                        class="font-caption text-caption text-on-surface-variant">
+                        Full integration of National Certificates (NC II)
+                        alongside rigorous hospital-based clinical rotations.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-secondary font-label-sm text-label-sm pt-space-sm border-t border-surface-variant/40 font-semibold">
+                    <span>AACCUP Level I Accredited</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >biotech</span
+                    >
+                  </div>
+                </article>
+              </div>
+
+              <!-- Section: Fun Facts & Archival Trivia -->
+              <article
+                class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-3xl shadow-sm border border-secondary-fixed/30 scroll-mt-28"
+                id="fun-facts">
+                <div class="flex items-center justify-between mb-space-lg">
+                  <div>
+                    <h3
+                      class="font-headline-md text-[24px] font-bold text-primary font-serif">
+                      Archival Trivia &amp; Fun Facts
+                    </h3>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-secondary text-[28px]"
+                    >lightbulb</span
+                  >
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                  <div class="bg-surface-container-low p-space-md rounded-2xl">
+                    <span
+                      class="text-[40px] leading-none text-secondary/30 font-serif font-bold block mb-2"
+                      >01</span
+                    >
+                    <h4
+                      class="font-title-sm text-title-sm text-primary mb-space-xxs font-semibold">
+                      The Florence Nightingale Lamp
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      The symbolic Nightingale lamp lighted by BulSU student
+                      nurses during capping and pinning ceremonies honors the
+                      noble lineage of clinical dedication.
+                    </p>
+                  </div>
+                  <div class="bg-surface-container-low p-space-md rounded-2xl">
+                    <span
+                      class="text-[40px] leading-none text-secondary/30 font-serif font-bold block mb-2"
+                      >02</span
+                    >
+                    <h4
+                      class="font-title-sm text-title-sm text-primary mb-space-xxs font-semibold">
+                      From 4 to 8 Sections
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      Within just a single academic cycle from 2004 to 2005,
+                      student applicant demand doubled the college cohort from
+                      four to eight full academic sections.
+                    </p>
+                  </div>
+                  <div class="bg-surface-container-low p-space-md rounded-2xl">
+                    <span
+                      class="text-[40px] leading-none text-secondary/30 font-serif font-bold block mb-2"
+                      >03</span
+                    >
+                    <h4
+                      class="font-title-sm text-title-sm text-primary mb-space-xxs font-semibold">
+                      Laddered Competencies
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      BulSU-CON was among the earliest regional colleges to
+                      offer TESDA-accredited healthcare modular certifications
+                      directly interwoven with BSN preparation.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Key Milestones Section: Horizontal Road-Map -->
+        <section
+          class="w-full bg-surface-container-low py-space-3xl mt-space-xl">
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+            <!-- Section Header -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+              <div>
+                <div
+                  class="inline-flex items-center gap-space-xxs text-secondary mb-space-xxs">
+                  <span class="material-symbols-outlined text-[18px]"
+                    >timeline</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider font-bold"
+                    >Chronicle of Excellence</span
+                  >
+                </div>
+                <h2
+                  class="font-headline-lg text-[28px] md:text-[34px] font-bold text-primary tracking-tight font-serif italic">
+                  Key Milestones
+                </h2>
+              </div>
+              <p
+                class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+                A definitive timeline charting the institutional evolution of
+                Bulacan State University - College of Nursing (BulSU-CON).
+              </p>
+            </div>
+
+            <!-- Horizontal Timeline Container -->
+            <div class="relative w-full">
+              <!-- Connecting Track Line (Desktop Horizontal) -->
+              <div
+                class="hidden lg:block absolute top-[26px] left-8 right-8 h-1 bg-secondary-fixed rounded-full z-0">
+                <!-- Animated / Filled progress bar indicator -->
+                <div
+                  class="h-full bg-secondary w-full rounded-full opacity-60"></div>
+              </div>
+
+              <!-- Milestone Cards Grid -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-gutter relative z-10">
+                <!-- Milestone 1: 2003 -->
+                <div class="flex flex-col group">
+                  <div class="flex items-center gap-space-sm mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-primary text-surface flex items-center justify-center font-title-sm text-title-sm shadow-md group-hover:scale-110 transition-transform flex-shrink-0 font-bold">
+                      2003
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold lg:hidden"
+                      >Foundation</span
+                    >
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border border-surface-variant/40">
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block mb-space-xxs font-bold"
+                        >The Inception</span
+                      >
+                      <h3
+                        class="font-title-sm text-title-sm text-primary mb-space-xs font-semibold">
+                        Foundation Charter
+                      </h3>
+                      <p
+                        class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">
+                        Established in December 2003 under B.O.R Resolution No.
+                        65, s. 2003 to address growing demand for competitive
+                        nurses locally and globally.
+                      </p>
+                    </div>
+                    <div
+                      class="mt-space-md pt-space-xs flex items-center gap-space-xxs text-secondary font-caption text-[11px] font-bold">
+                      <span class="material-symbols-outlined text-[14px]"
+                        >account_balance</span
+                      >
+                      <span>B.O.R. Res. No. 65, s. 2003</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Milestone 2: 2004 -->
+                <div class="flex flex-col group">
+                  <div class="flex items-center gap-space-sm mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-title-sm text-title-sm shadow-md group-hover:scale-110 transition-transform flex-shrink-0 font-bold">
+                      2004
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold lg:hidden"
+                      >Academic Inception</span
+                    >
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border border-surface-variant/40">
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block mb-space-xxs font-bold"
+                        >First Inception</span
+                      >
+                      <h3
+                        class="font-title-sm text-title-sm text-primary mb-space-xs font-semibold">
+                        CAS Era &amp; First 200
+                      </h3>
+                      <p
+                        class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">
+                        Formally offered 1st semester SY 2004–2005 under B.O.R.
+                        Res. No. 17, s. 2004 under CAS Dean Dr. Norma C. Morala
+                        with ~200 students in 4 sections.
+                      </p>
+                    </div>
+                    <div
+                      class="mt-space-md pt-space-xs flex items-center gap-space-xxs text-secondary font-caption text-[11px] font-bold">
+                      <span class="material-symbols-outlined text-[14px]"
+                        >school</span
+                      >
+                      <span>College of Arts &amp; Sciences</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Milestone 3: 2005 -->
+                <div class="flex flex-col group">
+                  <div class="flex items-center gap-space-sm mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-primary-container text-surface flex items-center justify-center font-title-sm text-title-sm shadow-md group-hover:scale-110 transition-transform flex-shrink-0 font-bold">
+                      2005
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold lg:hidden"
+                      >Autonomy</span
+                    >
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border border-surface-variant/40">
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block mb-space-xxs font-bold"
+                        >Stand-Alone College</span
+                      >
+                      <h3
+                        class="font-title-sm text-title-sm text-primary mb-space-xs font-semibold">
+                        Autonomous Status
+                      </h3>
+                      <p
+                        class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">
+                        B.O.R. Res. No. 4, s. 2005 established CON as a separate
+                        college with First Dean Ms. Adelaida G. Borbe;
+                        enrollment doubled to 8 sections.
+                      </p>
+                    </div>
+                    <div
+                      class="mt-space-md pt-space-xs flex items-center gap-space-xxs text-secondary font-caption text-[11px] font-bold">
+                      <span class="material-symbols-outlined text-[14px]"
+                        >domain</span
+                      >
+                      <span>Dean Adelaida G. Borbe</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Milestone 4: 2011 -->
+                <div class="flex flex-col group">
+                  <div class="flex items-center gap-space-sm mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-title-sm text-title-sm shadow-md group-hover:scale-110 transition-transform flex-shrink-0 font-bold">
+                      2011
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold lg:hidden"
+                      >Accreditation</span
+                    >
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border border-surface-variant/40">
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block mb-space-xxs font-bold"
+                        >Recognition</span
+                      >
+                      <h3
+                        class="font-title-sm text-title-sm text-primary mb-space-xs font-semibold">
+                        AACCUP Level I
+                      </h3>
+                      <p
+                        class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">
+                        Achieved AACCUP Level I Accreditation on December 6,
+                        2011, establishing academic quality benchmarks under
+                        Dean Ms. Loida O. Crespo.
+                      </p>
+                    </div>
+                    <div
+                      class="mt-space-md pt-space-xs flex items-center gap-space-xxs text-secondary font-caption text-[11px] font-bold">
+                      <span class="material-symbols-outlined text-[14px]"
+                        >verified</span
+                      >
+                      <span>AACCUP Accreditation</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Milestone 5: 2014-2015 -->
+                <div class="flex flex-col group">
+                  <div class="flex items-center gap-space-sm mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-[13px] leading-tight px-1 shadow-md group-hover:scale-110 transition-transform flex-shrink-0 text-center font-bold">
+                      2014-15
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold lg:hidden"
+                      >Laddered Courses</span
+                    >
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border border-surface-variant/40">
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block mb-space-xxs font-bold"
+                        >Expansion</span
+                      >
+                      <h3
+                        class="font-title-sm text-title-sm text-primary mb-space-xs font-semibold">
+                        TESDA &amp; Tracks
+                      </h3>
+                      <p
+                        class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">
+                        Launched laddered NC courses in Caregiving, Health Care
+                        Services, and Massage Therapy (operational 2014,
+                        TESDA-accredited June 2015).
+                      </p>
+                    </div>
+                    <div
+                      class="mt-space-md pt-space-xs flex items-center gap-space-xxs text-secondary font-caption text-[11px] font-bold">
+                      <span class="material-symbols-outlined text-[14px]"
+                        >medical_services</span
+                      >
+                      <span>TESDA Accredited</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Milestone 6: 2026 -->
+                <div class="flex flex-col group">
+                  <div class="flex items-center gap-space-sm mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-primary text-surface flex items-center justify-center font-title-sm text-title-sm shadow-md ring-4 ring-secondary-fixed group-hover:scale-110 transition-transform flex-shrink-0 font-bold">
+                      2026
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold lg:hidden"
+                      >Level IV Status</span
+                    >
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border-2 border-secondary">
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block mb-space-xxs font-bold"
+                        >Accreditation</span
+                      >
+                      <h3
+                        class="font-title-sm text-title-sm text-primary mb-space-xs font-semibold">
+                        Level IV Status
+                      </h3>
+                      <p
+                        class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">
+                        Naabot ng BulSU College of Nursing ang Level IV
+                        Re-accredited Status mula sa AACUP noong Mayo 2026 (bisa
+                        hanggang 2031)—sumasalamin sa mataas na husay.
+                      </p>
+                    </div>
+                    <div
+                      class="mt-space-md pt-space-xs flex items-center gap-space-xxs text-secondary font-caption text-[11px] font-bold">
+                      <span class="material-symbols-outlined text-[14px]"
+                        >workspace_premium</span
+                      >
+                      <span>AACCUP Level IV (2026–2031)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Dynamic Footer (Injected by components.js) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Shared Layout, Navigation & Favicon Script -->
+    <script src="/components.js"></script>
+
+    <!-- Interactive Smooth Scrolling & Active State Script for TOC -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("#story-toc a");
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElem = document.getElementById(targetId);
+            if (targetElem) {
+              window.scrollTo({
+                top: targetElem.offsetTop - 110,
+                behavior: "smooth",
+              });
+              links.forEach((l) => {
+                l.className =
+                  "toc-link group flex items-center justify-between px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-all";
+                const dot = l.querySelector("span > span");
+                if (dot)
+                  dot.className = "w-1.5 h-1.5 rounded-full bg-outline-variant";
+                const arrow = l.querySelector(".material-symbols-outlined");
+                if (arrow)
+                  arrow.className =
+                    "material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity";
+              });
+              this.className =
+                "toc-link group flex items-center justify-between px-space-md py-space-sm rounded-full bg-secondary-fixed text-primary font-label-md text-label-md shadow-xs transition-all";
+              const curDot = this.querySelector("span > span");
+              if (curDot)
+                curDot.className = "w-1.5 h-1.5 rounded-full bg-secondary";
+              const curArrow = this.querySelector(".material-symbols-outlined");
+              if (curArrow)
+                curArrow.className =
+                  "material-symbols-outlined text-[16px] text-secondary";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

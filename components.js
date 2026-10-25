@@ -114,7 +114,7 @@ const headerHTML = `
           ><a
             class="text-surface-variant hover:text-surface transition-colors flex items-center h-full px-space-xs font-label-md text-label-md"
             data-path="our-story"
-            href="#"
+            href="/pages/our-story/our-story.html"
             >Our Story</a
           ><a
             class="text-surface-variant hover:text-surface transition-colors flex items-center h-full px-space-xs font-label-md text-label-md"
@@ -181,7 +181,7 @@ const headerHTML = `
           ><a
             class="text-surface-variant hover:text-surface hover:bg-primary transition-all py-space-sm px-space-md rounded-DEFAULT font-label-md text-label-md flex items-center justify-between"
             data-path="our-story"
-            href="#"
+            href="/pages/our-story/our-story.html"
             ><span class="">Our Story</span
             ><span
               class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim"
