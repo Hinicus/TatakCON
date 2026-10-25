@@ -1514,6 +1514,14 @@ main > :last-child {
   top: 26px;
 }
 
+.top-16 {
+  top: 4rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -2070,6 +2078,14 @@ main > :last-child {
 
 .scroll-mt-28 {
   scroll-margin-top: 7rem;
+}
+
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
+}
+
+.scroll-mt-8 {
+  scroll-margin-top: 2rem;
 }
 
 .grid-cols-1 {
