@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       alert(
-        "This section is currently under construction for the next phase. The News & Admin Portal are live for testing!",
+        "This section is currently under construction for the next phase. Stay tuned!",
       );
     });
   });
