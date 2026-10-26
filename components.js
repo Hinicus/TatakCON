@@ -139,7 +139,7 @@ const headerHTML = `
           ><a
             class="text-surface-variant hover:text-surface transition-colors flex items-center h-full px-space-xs font-label-md text-label-md"
             data-path="about"
-            href="#"
+            href="/pages/about/about.html"
             >About</a
           >
           <!-- Portal Button (Adapts based on login state) -->
@@ -226,7 +226,7 @@ const headerHTML = `
           ><a
             class="text-surface-variant hover:text-surface hover:bg-primary transition-all py-space-sm px-space-md rounded-DEFAULT font-label-md text-label-md flex items-center justify-between"
             data-path="about"
-            href="#"
+            href="/pages/about/about.html"
             ><span class="">About</span
             ><span
               class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim"
