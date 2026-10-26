@@ -2895,6 +2895,12 @@ main > :last-child {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-primary\/30 {
+  --tw-gradient-from: rgb(0 19 49 / 0.3) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 19 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-\[\#12284B\] {
   --tw-gradient-to: rgb(18 40 75 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #12284B var(--tw-gradient-via-position), var(--tw-gradient-to);

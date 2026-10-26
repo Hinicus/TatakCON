@@ -282,7 +282,7 @@ const footerHTML = `
             <img alt="Knightingale Society" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/knightingale-society.png">
           </div>
         </a>
-        <a href="/pages/con-community/con-community.html" title="CORTEX" class="flex flex-col items-center text-center group cursor-pointer">
+        <a href="/pages/con-community/organizations/cortex.html" title="CORTEX" class="flex flex-col items-center text-center group cursor-pointer">
           <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
             <img alt="Cortex - The CON Academic Society" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/cortex-the-con-academic-society.jpg">
           </div>
@@ -312,7 +312,7 @@ const footerHTML = `
             <img alt="Unang Hakbang" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/unang-hakbang.jpg">
           </div>
         </a>
-        <a href="/pages/con-community/con-community.html" title="Local Student Council" class="flex flex-col items-center text-center group cursor-pointer">
+        <a href="/pages/con-community/organizations/local-student-council.html" title="Local Student Council" class="flex flex-col items-center text-center group cursor-pointer">
           <div class="w-14 h-14 rounded-full bg-white/10 p-1 border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-clear-skies group-hover:bg-white/20 shadow-sm">
             <img alt="Local Student Council" class="w-full h-full object-contain rounded-full" src="/images/con-org-logo/local-student-council.jpg">
           </div>

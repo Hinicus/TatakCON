@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Local Student Council — Leadership &amp; Member Directory | TatakCON
+    </title>
+
+    <!-- Compiled Tailwind & Global CSS -->
+    <link href="/global.css" rel="stylesheet" />
+
+    <!-- Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet" />
+  </head>
+
+  <body
+    class="min-h-screen bg-surface font-body-md text-on-surface flex flex-col antialiased selection:bg-clear-skies selection:text-deep-ocean">
+    <!-- Dynamic Header (Injected by components.js) -->
+    <div id="header-placeholder"></div>
+
+    <main class="w-full flex-grow bg-surface">
+      <!-- Hero Header Banner -->
+      <section
+        class="relative bg-gradient-to-b from-[#0A172C] via-[#12284B] to-[#16335F] text-white py-12 lg:py-16 px-margin-mobile md:px-margin-tablet lg:px-margin border-b-4 border-primary overflow-hidden">
+        <!-- Decorative Radial Glow -->
+        <div
+          class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/30 via-transparent to-transparent pointer-events-none"></div>
+        <div
+          class="absolute -right-20 -top-24 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+        <div
+          class="absolute -left-16 bottom-0 w-80 h-80 rounded-full bg-tertiary-fixed-dim/10 blur-2xl pointer-events-none"></div>
+
+        <div
+          class="max-w-6xl mx-auto relative z-10 flex flex-col items-center text-center">
+          <!-- Back to CON Community Breadcrumb Pill -->
+          <div class="w-full flex justify-start mb-6">
+            <a
+              href="/pages/con-community/con-community.html"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-tertiary-fixed-dim hover:text-white text-xs font-bold tracking-wide transition-all backdrop-blur-sm ring-1 ring-white/15 group">
+              <span
+                class="material-symbols-outlined text-[16px] group-hover:-translate-x-0.5 transition-transform"
+                >arrow_back</span
+              >
+              <span>Back to CON Community</span>
+            </a>
+          </div>
+
+          <!-- Official Seal / Emblem of Organization -->
+          <div class="relative mb-6">
+            <div
+              class="absolute -inset-2 bg-gradient-to-r from-clear-skies/40 to-primary-fixed/40 rounded-full blur-xl opacity-75"></div>
+            <div
+              class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1.5 bg-gradient-to-b from-white to-surface-variant shadow-2xl flex items-center justify-center">
+              <div
+                class="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
+                <img
+                  src="/images/con-org-logo/local-student-council.jpg"
+                  alt="Local Student Council Seal"
+                  class="rounded-full w-full h-full object-contain transform hover:scale-105 transition-transform duration-300" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Eyebrow Subtitle -->
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/60 border border-clear-skies/40 text-tertiary-fixed-dim text-xs font-bold tracking-widest uppercase mb-3 shadow-inner">
+            <span class="material-symbols-outlined text-[16px]"
+              >account_balance</span
+            >
+            <span>Governance Council • College of Nursing</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1
+            class="font-headline-lg text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-2 font-serif">
+            Local Student Council
+          </h1>
+          <p
+            class="font-headline-sm text-lg sm:text-xl text-clear-skies font-medium tracking-wide mb-5 max-w-2xl font-serif italic">
+            CON LSC • Student Body
+          </p>
+
+          <!-- Verbatim Filipino Community Description -->
+          <p
+            class="text-sm sm:text-base text-surface-variant/95 max-w-3xl leading-relaxed italic border-t border-b border-white/15 py-4 px-4">
+            "Ang opisyal na pamunuan ng mga mag-aaral o student government ng
+            BulSU College of Nursing na nangunguna sa pagtataguyod ng kapakanan,
+            mga karapatan, at mga programa para sa buong komunidad ng mga
+            nursing student."
+          </p>
+        </div>
+      </section>
+
+      <!-- Roster & Directory Body -->
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-2xl space-y-16">
+        <!-- SECTION 1: EXECUTIVE LEADERSHIP -->
+        <section class="space-y-8">
+          <div
+            class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-surface-variant pb-4 gap-2">
+            <div>
+              <div
+                class="flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-secondary">
+                <span class="material-symbols-outlined text-[18px]">stars</span>
+                <span>Pamunuang Tagapagpaganap</span>
+              </div>
+              <h2
+                class="font-headline-lg text-2xl sm:text-3xl font-bold text-primary mt-1 font-serif">
+                Executive Leadership
+              </h2>
+            </div>
+          </div>
+
+          <!-- Top Row: Gobernador & Bise Gobernador -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
+            <!-- 1. Gobernador: Jetlyn Rose Castor -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md border-2 border-secondary hover:shadow-lg transition-all duration-300 flex flex-col group">
+              <div
+                class="aspect-[4/4] w-full overflow-hidden bg-surface-container relative">
+                <img
+                  loading="lazy"
+                  src="/images/con-org-members/local-student-council/gobernador-jetlyn-rose-castor.jpg"
+                  alt="Jetlyn Rose Castor"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <span
+                  class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-secondary text-white shadow-sm flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[13px]"
+                    >shield_person</span
+                  >
+                  Head of Council
+                </span>
+              </div>
+              <div
+                class="p-6 flex flex-col flex-grow justify-between text-center">
+                <div>
+                  <p
+                    class="text-xs font-bold text-secondary uppercase tracking-wider mb-1">
+                    Gobernador
+                  </p>
+                  <h3
+                    class="font-headline-sm text-xl font-bold text-primary group-hover:text-secondary transition-colors leading-snug font-serif">
+                    Jetlyn Rose Castor
+                  </h3>
+                  <p
+                    class="text-xs text-on-surface-variant pt-2 flex items-center justify-center gap-1.5 font-medium">
+                    <span
+                      class="material-symbols-outlined text-[15px] text-secondary"
+                      >workspace_premium</span
+                    >
+                    CON LSC Governor
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Bise Gobernador: Jilliane Brace DC. Salandanan -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md border-2 border-clear-skies hover:border-secondary hover:shadow-lg transition-all duration-300 flex flex-col group">
+              <div
+                class="aspect-[4/4] w-full overflow-hidden bg-surface-container relative">
+                <img
+                  loading="lazy"
+                  src="/images/con-org-members/local-student-council/bise-gobernador-jilliane-brace-dc-salandanan.jpg"
+                  alt="Jilliane Brace DC. Salandanan"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <span
+                  class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-primary/90 text-tertiary-fixed-dim backdrop-blur-sm shadow-sm flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[13px]"
+                    >military_tech</span
+                  >
+                  Executive Directorate
+                </span>
+              </div>
+              <div
+                class="p-6 flex flex-col flex-grow justify-between text-center">
+                <div>
+                  <p
+                    class="text-xs font-bold text-secondary uppercase tracking-wider mb-1">
+                    Bise Gobernador
+                  </p>
+                  <h3
+                    class="font-headline-sm text-xl font-bold text-primary group-hover:text-secondary transition-colors leading-snug font-serif">
+                    Jilliane Brace DC. Salandanan
+                  </h3>
+                  <p
+                    class="text-xs text-on-surface-variant pt-2 flex items-center justify-center gap-1.5 font-medium">
+                    <span
+                      class="material-symbols-outlined text-[15px] text-secondary"
+                      >assistant</span
+                    >
+                    CON LSC Vice Governor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: BOARD MEMBERS (MGA BOKAL) -->
+        <section class="space-y-8">
+          <div
+            class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-surface-variant pb-4 gap-2">
+            <div>
+              <div
+                class="flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-secondary">
+                <span class="material-symbols-outlined text-[18px]"
+                  >group_work</span
+                >
+                <span>Council Representatives</span>
+              </div>
+              <h2
+                class="font-headline-lg text-2xl sm:text-3xl font-bold text-primary mt-1 font-serif">
+                Board Members (Mga Bokal)
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
+            <!-- 3. Bokal: Eula Nesha M. Mendoza -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-surface-variant/60 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col group">
+              <div
+                class="aspect-[4/4] w-full overflow-hidden bg-surface-container relative">
+                <img
+                  loading="lazy"
+                  src="/images/con-org-members/local-student-council/bokal-eula-nesha-m-mendoza.jpg"
+                  alt="Eula Nesha M. Mendoza"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <span
+                  class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-primary/85 text-tertiary-fixed-dim backdrop-blur-sm">
+                  Legislative
+                </span>
+              </div>
+              <div
+                class="p-5 flex flex-col flex-grow justify-between text-center">
+                <div>
+                  <p
+                    class="text-xs font-bold text-secondary uppercase tracking-wider mb-1">
+                    Bokal
+                  </p>
+                  <h3
+                    class="font-headline-sm text-lg font-bold text-primary group-hover:text-secondary transition-colors leading-snug font-serif">
+                    Eula Nesha M. Mendoza
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Bokal: Von Richie R. Cadabona -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-surface-variant/60 hover:border-secondary hover:shadow-md transition-all duration-300 flex flex-col group">
+              <div
+                class="aspect-[4/4] w-full overflow-hidden bg-surface-container relative">
+                <img
+                  loading="lazy"
+                  src="/images/con-org-members/local-student-council/bokal-von-richie-r-cadabona.jpg"
+                  alt="Von Richie R. Cadabona"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <span
+                  class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-primary/85 text-tertiary-fixed-dim backdrop-blur-sm">
+                  Legislative
+                </span>
+              </div>
+              <div
+                class="p-5 flex flex-col flex-grow justify-between text-center">
+                <div>
+                  <p
+                    class="text-xs font-bold text-secondary uppercase tracking-wider mb-1">
+                    Bokal
+                  </p>
+                  <h3
+                    class="font-headline-sm text-lg font-bold text-primary group-hover:text-secondary transition-colors leading-snug font-serif">
+                    Von Richie R. Cadabona
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: ORGANIZATIONAL PROFILE & DIRECTORY ACTION -->
+        <section
+          class="bg-surface-container-lowest rounded-3xl p-8 sm:p-10 shadow-sm border border-secondary-fixed/50 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          <div class="space-y-4 lg:col-span-2">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-wide uppercase">
+              <span class="material-symbols-outlined text-[16px]"
+                >account_balance</span
+              >
+              <span>Student Rights &amp; Welfare</span>
+            </div>
+            <h2
+              class="font-headline-lg text-2xl sm:text-3xl font-bold text-primary font-serif">
+              About the Local Student Council
+            </h2>
+            <p
+              class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              As the highest student governing body in the College of Nursing,
+              the Local Student Council (LSC) is the vanguard of student rights,
+              academic welfare, and collegiate empowerment. They bridge the
+              student body and the administration, ensuring that the needs of
+              every Isko-Nars are met with action, transparency, and principled
+              leadership.
+            </p>
+          </div>
+
+          <!-- Back to Directory Quick Action Card -->
+          <div
+            class="bg-primary-container text-surface p-6 rounded-2xl flex flex-col justify-between gap-4 shadow-md">
+            <div>
+              <span
+                class="text-xs font-bold uppercase tracking-widest text-tertiary-fixed-dim block mb-1"
+                >CON Community</span
+              >
+              <h3 class="font-headline-sm text-lg font-bold font-serif">
+                Explore Accredited Student Organizations
+              </h3>
+              <p class="text-xs text-surface-variant mt-1">
+                Return to the main collegiate directory to view other councils,
+                academic guilds, and societies.
+              </p>
+            </div>
+            <a
+              href="/pages/con-community/con-community.html"
+              class="inline-flex items-center justify-between px-5 py-2.5 rounded-full bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container text-xs font-bold transition-all group">
+              <span>Back to Directory</span>
+              <span
+                class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Dynamic Footer (Injected by components.js) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Shared Layout, Navigation & Favicon Script -->
+    <script src="/components.js"></script>
+  </body>
+</html>

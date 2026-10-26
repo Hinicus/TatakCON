@@ -115,8 +115,10 @@
                 id="organizations-grid"
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter mt-space-lg">
                 <!-- 1. Local Student Council -->
-                <div
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30">
+                <!-- 1. Local Student Council (Interactive Link to Subpage) -->
+                <a
+                  href="/pages/con-community/organizations/local-student-council.html"
+                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
                   <div
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
@@ -138,13 +140,20 @@
                     CON LSC • Student Body
                   </p>
                   <p
-                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs flex-grow">
                     Ang opisyal na pamunuan ng mga mag-aaral o student
                     government ng BulSU College of Nursing na nangunguna sa
                     pagtataguyod ng kapakanan, mga karapatan, at mga programa
                     para sa buong komunidad ng mga nursing student.
                   </p>
-                </div>
+                  <span
+                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
+                    View Organization Profile
+                    <span class="material-symbols-outlined text-[15px]"
+                      >arrow_forward</span
+                    >
+                  </span>
+                </a>
 
                 <!-- 2. Knightingale Society (Interactive Link to Subpage) -->
                 <a
