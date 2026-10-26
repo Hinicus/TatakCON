@@ -22,11 +22,11 @@
   <body
     class="min-h-screen bg-surface font-body-md text-on-surface flex flex-col antialiased selection:bg-clear-skies selection:text-deep-ocean">
     <!-- Dynamic Header (Injected by components.js) -->
-    <div id="header-placeholder" class="sticky top-0 w-full z-50"></div>
+    <div id="header-placeholder"></div>
 
     <main class="w-full flex-grow bg-surface">
       <div class="flex flex-col w-full">
-        <!-- Hero Banner: Soft Sky Architectural Header -->
+        <!-- Hero Banner -->
         <section
           class="relative w-full overflow-hidden bg-primary-container text-surface py-space-2xl md:py-space-3xl">
           <div
@@ -66,6 +66,27 @@
               and esteemed academic stewards championing compassionate
               healthcare beyond the walls.
             </p>
+
+            <!-- Official College of Nursing Facebook Page Pill -->
+            <div class="mt-space-lg">
+              <a
+                href="https://www.facebook.com/bulsu.con"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 backdrop-blur-sm py-2.5 px-5 rounded-full shadow-sm ring-1 ring-white/20 text-xs font-bold text-white transition-all group">
+                <svg
+                  class="w-4 h-4 fill-current text-tertiary-fixed-dim shrink-0"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+                <span>BulSU College of Nursing Official Facebook Page</span>
+                <span
+                  class="material-symbols-outlined text-[15px] text-tertiary-fixed-dim group-hover:translate-x-0.5 transition-transform"
+                  >open_in_new</span
+                >
+              </a>
+            </div>
           </div>
         </section>
 
@@ -115,26 +136,29 @@
                 id="organizations-grid"
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter mt-space-lg">
                 <!-- 1. Local Student Council -->
-                <!-- 1. Local Student Council (Interactive Link to Subpage) -->
-                <a
-                  href="/pages/con-community/organizations/local-student-council.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
-                  <div
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/local-student-council.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="Local Student Council"
                       src="/images/con-org-logo/local-student-council.jpg" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-primary text-on-primary font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Governance Council</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                    Local Student Council
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/local-student-council.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      Local Student Council
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     CON LSC • Student Body
@@ -146,35 +170,57 @@
                     pagtataguyod ng kapakanan, mga karapatan, at mga programa
                     para sa buong komunidad ng mga nursing student.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
-
-                <!-- 2. Knightingale Society (Interactive Link to Subpage) -->
-                <a
-                  href="/pages/con-community/organizations/knightingale-society.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
                   <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/local-student-council.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/BulSUCONLSC"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit Local Student Council on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- 2. Knightingale Society -->
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/knightingale-society.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="Knightingale Society"
                       src="/images/con-org-logo/knightingale-society.png" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Leadership Society</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors flex items-center gap-1">
-                    <span>Knightingale Society</span>
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/knightingale-society.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      Knightingale Society
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     Cadence Chapter
@@ -185,36 +231,57 @@
                     ipinangalan kay Florence Nightingale, na nakatutok sa
                     pagtataguyod ng kahusayan sa nursing at pagkakaisa.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
+                  <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/knightingale-society.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/ks.bulsucon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit Knightingale Society on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
 
                 <!-- 3. CORTEX -->
-                <!-- 3. CORTEX (Interactive Link to Subpage) -->
-                <a
-                  href="/pages/con-community/organizations/cortex.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
-                  <div
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/cortex.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="CORTEX"
                       src="/images/con-org-logo/cortex-the-con-academic-society.jpg" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Academic Society</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors flex items-center gap-1">
-                    <span>CORTEX</span>
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/cortex.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      CORTEX
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     CON Academic Society • Est. 2026
@@ -225,35 +292,57 @@
                     ang talino at pagbutihin ang performans ng mga nursing
                     student sa kanilang pag-aaral.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
-
-                <!-- 4. The Nurses' Notes (Interactive Link to Subpage) -->
-                <a
-                  href="/pages/con-community/organizations/the-nurses-notes.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
                   <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/cortex.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61591587331259"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit CORTEX on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- 4. The Nurses' Notes -->
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/the-nurses-notes.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="The Nurses' Notes"
                       src="/images/con-org-logo/the-nurses-notes.jpg" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-primary text-on-primary font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Official Publication</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                    The Nurses' Notes
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/the-nurses-notes.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      The Nurses' Notes
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     CON Journalism Guild • Est. 2007
@@ -264,35 +353,57 @@
                     of Nursing na nagbibigay-impormasyon sa pamamagitan ng
                     campus journalism at malikhaing pagsusulat.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
-
-                <!-- 5. CON Red Cross Youth Council (Interactive Link to Subpage) -->
-                <a
-                  href="/pages/con-community/organizations/red-cross-youth-council.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
                   <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/the-nurses-notes.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/TheNursesNotesPublication"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit The Nurses' Notes on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- 5. CON Red Cross Youth Council -->
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/red-cross-youth-council.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="CON Red Cross Youth Council"
                       src="/images/con-org-logo/red-cross-youth-council.jpg" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Humanitarian Council</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                    CON Red Cross Youth Council
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/red-cross-youth-council.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      CON Red Cross Youth Council
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     CON RCYC • Philippine Red Cross
@@ -303,35 +414,57 @@
                     nagtataguyod ng bolunterismo, kaligtasan sa kalusugan, at
                     gawaing makatao.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
-
-                <!-- 6. Pacemaker All-Stars (Interactive Link to Subpage) -->
-                <a
-                  href="/pages/con-community/organizations/pacemaker-all-stars.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
                   <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/red-cross-youth-council.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61559999584745"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit CON Red Cross Youth Council on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- 6. Pacemaker All-Stars -->
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/pacemaker-all-stars.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="Pacemaker All-Stars"
                       src="/images/con-org-logo/pacemaker-all-stars.jpg" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Culture &amp; Performing Arts</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                    Pacemaker All-Stars
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/pacemaker-all-stars.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      Pacemaker All-Stars
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     PMAS Dance Troupe • Est. 2008
@@ -342,35 +475,57 @@
                     karaniwang nagtataguyod ng sining, talento, o pangkalahatang
                     pag-unlad ng mga estudyante.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
-
-                <!-- 7. LUNGS  -->
-                <a
-                  href="/pages/con-community/organizations/lungs.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
                   <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/pacemaker-all-stars.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/PMASCON"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit Pacemaker All-Stars on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- 7. LUNGS -->
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/lungs.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="LUNGS - Lydians United Nursing Giocoso Singers"
                       src="/images/con-org-logo/lungs-lydians-united-nursing-giocoso-singers.png" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Musical &amp; Choral Guild</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors flex items-center gap-1">
-                    <span>LUNGS</span>
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/lungs.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      LUNGS
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     Lydians United Nursing Giocoso Singers
@@ -381,35 +536,57 @@
                     College of Nursing na nagtatampok sa talento sa pag-awit ng
                     mga nursing student.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
-
-                <!-- 8. Unang Hakbang (Interactive Link to Subpage) -->
-                <a
-                  href="/pages/con-community/organizations/unang-hakbang.html"
-                  class="org-card bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/30 hover:border-secondary/50">
                   <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/lungs.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/bulsuconlungs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit LUNGS on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- 8. Unang Hakbang -->
+                <article
+                  class="org-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col items-center text-center group border border-surface-variant/40 hover:border-secondary/50">
+                  <a
+                    href="/pages/con-community/organizations/unang-hakbang.html"
                     class="relative w-28 h-28 mb-space-md rounded-full bg-surface-container-low p-space-xxs shadow-inner flex items-center justify-center overflow-hidden">
                     <img
                       loading="lazy"
-                      class="w-full h-full object-contain rounded-full"
+                      class="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
                       alt="Unang Hakbang"
                       src="/images/con-org-logo/unang-hakbang.jpg" />
-                  </div>
+                  </a>
                   <span
                     class="inline-block px-space-xs py-space-xxs rounded-full bg-primary text-on-primary font-label-sm text-label-sm mb-space-xs font-semibold"
                     >Community Outreach</span
                   >
-                  <h3
-                    class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors flex items-center gap-1">
-                    <span>Unang Hakbang</span>
-                  </h3>
+                  <a
+                    href="/pages/con-community/organizations/unang-hakbang.html"
+                    class="hover:text-secondary transition-colors">
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                      Unang Hakbang
+                    </h3>
+                  </a>
                   <p
                     class="font-caption text-caption text-secondary uppercase tracking-wider mt-space-xxs font-semibold">
                     CON Community Extension • Est. 2020
@@ -420,14 +597,32 @@
                     sa mga bagong freshman habang sinisimulan nila ang kanilang
                     paglalakbay sa kolehiyo.
                   </p>
-                  <span
-                    class="mt-space-md inline-flex items-center gap-1 text-xs font-bold text-secondary group-hover:translate-x-0.5 transition-transform">
-                    View Organization Profile
-                    <span class="material-symbols-outlined text-[15px]"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </a>
+                  <div
+                    class="mt-space-md pt-space-sm border-t border-surface-variant/40 w-full flex items-center justify-center gap-2">
+                    <a
+                      href="/pages/con-community/organizations/unang-hakbang.html"
+                      class="flex-1 inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl bg-primary-container hover:bg-secondary text-white text-xs font-bold transition-colors">
+                      <span>View Profile</span>
+                      <span class="material-symbols-outlined text-[15px]"
+                        >arrow_forward</span
+                      >
+                    </a>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61552913007532"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Visit Unang Hakbang on Facebook"
+                      class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container hover:bg-[#1877F2] text-primary hover:text-white text-xs font-bold transition-colors border border-outline-variant/40">
+                      <svg
+                        class="w-3.5 h-3.5 fill-current shrink-0"
+                        viewBox="0 0 24 24">
+                        <path
+                          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                      </svg>
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </article>
               </div>
             </section>
           </div>

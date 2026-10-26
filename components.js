@@ -133,11 +133,6 @@ const headerHTML = `
             >What We Carry</a
           ><a
             class="text-surface-variant hover:text-surface transition-colors flex items-center h-full px-space-xs font-label-md text-label-md"
-            data-path="resources"
-            href="#"
-            >Resources</a
-          ><a
-            class="text-surface-variant hover:text-surface transition-colors flex items-center h-full px-space-xs font-label-md text-label-md"
             data-path="about"
             href="/pages/about/about.html"
             >About</a
@@ -210,15 +205,6 @@ const headerHTML = `
             data-path="what-we-carry"
             href="#"
             ><span class="">What We Carry</span
-            ><span
-              class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim"
-              >chevron_right</span
-            ></a
-          ><a
-            class="text-surface-variant hover:text-surface hover:bg-primary transition-all py-space-sm px-space-md rounded-DEFAULT font-label-md text-label-md flex items-center justify-between"
-            data-path="resources"
-            href="#"
-            ><span class="">Resources</span
             ><span
               class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim"
               >chevron_right</span
@@ -321,12 +307,18 @@ const footerHTML = `
     </div>
 
 
-    <!-- Quick links -->
+<!-- Quick links (inside footerHTML in components.js) -->
     <div class="flex flex-wrap items-center justify-between gap-4 text-xs text-slate-300 mb-8">
       <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
         <a class="hover:text-white transition-colors" href="/">Home</a>
+        <a class="hover:text-white transition-colors" href="/pages/our-story/our-story.html">Our Story</a>
         <a class="hover:text-white transition-colors" href="/pages/con-community/con-community.html">CON Community</a>
         <a class="hover:text-white transition-colors" href="/pages/traditions-culture/traditions-culture.html">Traditions &amp; Culture</a>
+        <a class="hover:text-white transition-colors" href="/pages/about/about.html">About</a>
+        <a class="hover:text-clear-skies transition-colors inline-flex items-center gap-1" href="https://www.facebook.com/bulsu.con" target="_blank" rel="noopener noreferrer">
+          <span>BulSU CON Facebook</span>
+          <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+        </a>
         <a class="hover:text-clear-skies transition-colors inline-flex items-center gap-1" href="https://bulsu.edu.ph" target="_blank" rel="noopener noreferrer">
           <span>bulsu.edu.ph</span>
           <span class="material-symbols-outlined text-[14px]">open_in_new</span>
@@ -455,4 +447,80 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     });
   });
+});
+
+// Automatically inject Official Facebook Page buttons on Organization Subpages
+document.addEventListener("DOMContentLoaded", () => {
+  const orgFacebookLinks = {
+    "local-student-council.html": "https://www.facebook.com/BulSUCONLSC",
+    "knightingale-society.html": "https://www.facebook.com/ks.bulsucon",
+    "cortex.html": "https://www.facebook.com/profile.php?id=61591587331259",
+    "the-nurses-notes.html":
+      "https://www.facebook.com/TheNursesNotesPublication",
+    "red-cross-youth-council.html":
+      "https://www.facebook.com/profile.php?id=61559999584745",
+    "pacemaker-all-stars.html": "https://www.facebook.com/PMASCON",
+    "lungs.html": "https://www.facebook.com/bulsuconlungs",
+    "unang-hakbang.html":
+      "https://www.facebook.com/profile.php?id=61552913007532",
+  };
+
+  const currentFile = window.location.pathname.split("/").pop();
+  const fbUrl = orgFacebookLinks[currentFile];
+
+  if (fbUrl) {
+    // 1. Add Facebook button to the top Hero Banner breadcrumb row
+    const backLink = document.querySelector(
+      'main section a[href*="con-community.html"]',
+    );
+    if (backLink && backLink.parentElement) {
+      backLink.parentElement.classList.remove("justify-start");
+      backLink.parentElement.classList.add(
+        "justify-between",
+        "flex-wrap",
+        "gap-3",
+      );
+      backLink.insertAdjacentHTML(
+        "afterend",
+        `
+        <a
+          href="${fbUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1877F2] hover:bg-[#166fe5] text-white text-xs font-bold tracking-wide transition-all shadow-md ring-1 ring-white/20 group">
+          <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          <span>Official Facebook Page</span>
+          <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+        </a>
+      `,
+      );
+    }
+
+    // 2. Add Facebook button inside the bottom Quick Action Card
+    const bottomBackBtn = document.querySelector(
+      'main section div.bg-primary-container a[href*="con-community.html"]',
+    );
+    if (bottomBackBtn) {
+      bottomBackBtn.insertAdjacentHTML(
+        "beforebegin",
+        `
+        <a
+          href="${fbUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-between px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-all ring-1 ring-white/15 group">
+          <span class="inline-flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span>Visit Facebook Page</span>
+          </span>
+          <span class="material-symbols-outlined text-[15px]">open_in_new</span>
+        </a>
+      `,
+      );
+    }
+  }
 });
