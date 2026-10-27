@@ -164,13 +164,79 @@ function renderNewsList(articles, replace = true) {
   }
 }
 
-// --- Hero Image Carousel Logic ---
+// --- 1. Edit or Add Carousel Slides Here (JSON-style Data Array) ---
+const carouselData = [
+  {
+    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAvV31wUoattWhPm4JOcJCabBT93IsAWAuWyo5r7-1x9TX2DFKdE4FedvCghYYCMa4Pk2jT3yanSy6cG9EzTHUBk5SCDtL8wv-c8Oz8JRUAJo5_URR_0nYinn3MjoOh__I6gh4RcDx3Uh-M-BlZ5YZ-JFtkTBfhxc2tIW7C1Fl48WKh5EU6dgxHUryqhlIy2O1hOvJP7l_dj59AmtL9M_DhJzGGswOET66f4nx0-CEDgvQImLLJgyYd",
+    alt: "BulSU College of Nursing",
+    title: "BulSU College of Nursing",
+    subtitle: "AACCUP Level IV Re-Accredited Institution",
+    icon: "account_balance",
+  },
+  {
+    src: "/images/traditions-culture/para-sa-masa-1.jpg",
+    alt: "CONlympics Clinical Training",
+    title: "Clinical Skills & Simulation",
+    subtitle: "Excellence in Hands-On Nursing Training",
+    icon: "medical_services",
+  },
+  {
+    src: "/images/con-org-logo/college-of-nursing.jpg",
+    alt: "Community Outreach",
+    title: "Community Health & Outreach",
+    subtitle: "Compassionate Service Beyond Campus Walls",
+    icon: "volunteer_activism",
+  },
+];
+
+// --- 2. Dynamic Hero Carousel Builder & Controller ---
 function initHeroCarousel() {
   const carousel = document.getElementById("hero-carousel");
-  if (!carousel) return;
+  const slidesContainer = document.getElementById("carousel-slides");
+  const indicatorsContainer = document.getElementById("carousel-indicators");
 
-  const slides = carousel.querySelectorAll(".carousel-slide");
-  const dots = carousel.querySelectorAll(".carousel-dot");
+  if (
+    !carousel ||
+    !slidesContainer ||
+    !indicatorsContainer ||
+    !carouselData.length
+  ) {
+    return;
+  }
+
+  // Automatically generate slides and indicator dots from carouselData
+  slidesContainer.innerHTML = carouselData
+    .map(
+      (item, index) => `
+      <div
+        class="carousel-slide absolute inset-0 transition-opacity duration-700 ease-in-out ${
+          index === 0 ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+        }">
+        <img
+          ${index === 0 ? "" : 'loading="lazy"'}
+          class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+          alt="${item.alt || item.title}"
+          src="${item.src}" />
+      </div>
+    `,
+    )
+    .join("");
+
+  indicatorsContainer.innerHTML = carouselData
+    .map(
+      (_, index) => `
+      <button
+        type="button"
+        aria-label="Slide ${index + 1}"
+        class="carousel-dot h-1.5 rounded-full transition-all duration-300 ${
+          index === 0 ? "w-6 bg-white" : "w-1.5 bg-white/50 hover:bg-white/80"
+        }"></button>
+    `,
+    )
+    .join("");
+
+  const slides = slidesContainer.querySelectorAll(".carousel-slide");
+  const dots = indicatorsContainer.querySelectorAll(".carousel-dot");
   const prevBtn = document.getElementById("carousel-prev");
   const nextBtn = document.getElementById("carousel-next");
   const badgeTitle = document.getElementById("carousel-badge-title");
@@ -181,7 +247,7 @@ function initHeroCarousel() {
   let autoPlayTimer = null;
 
   function showSlide(index) {
-    currentIndex = (index + slides.length) % slides.length;
+    currentIndex = (index + carouselData.length) % carouselData.length;
 
     slides.forEach((slide, i) => {
       const isActive = i === currentIndex;
@@ -200,17 +266,11 @@ function initHeroCarousel() {
       dot.classList.toggle("bg-white/50", !isActive);
     });
 
-    // Update the floating badge caption & icon to match the active slide
-    const activeSlide = slides[currentIndex];
-    if (badgeTitle && activeSlide.dataset.title) {
-      badgeTitle.textContent = activeSlide.dataset.title;
-    }
-    if (badgeSubtitle && activeSlide.dataset.subtitle) {
-      badgeSubtitle.textContent = activeSlide.dataset.subtitle;
-    }
-    if (badgeIcon && activeSlide.dataset.icon) {
-      badgeIcon.textContent = activeSlide.dataset.icon;
-    }
+    // Update the floating badge directly from the carouselData object
+    const currentItem = carouselData[currentIndex];
+    if (badgeTitle) badgeTitle.textContent = currentItem.title;
+    if (badgeSubtitle) badgeSubtitle.textContent = currentItem.subtitle;
+    if (badgeIcon) badgeIcon.textContent = currentItem.icon || "photo_camera";
   }
 
   function nextSlide() {
@@ -230,7 +290,6 @@ function initHeroCarousel() {
     if (autoPlayTimer) clearInterval(autoPlayTimer);
   }
 
-  // Button & Dot Event Listeners
   prevBtn?.addEventListener("click", () => {
     prevSlide();
     startAutoPlay();
@@ -248,11 +307,9 @@ function initHeroCarousel() {
     });
   });
 
-  // Pause auto-rotation when hovering on desktop
   carousel.addEventListener("mouseenter", stopAutoPlay);
   carousel.addEventListener("mouseleave", startAutoPlay);
 
-  // Mobile touch-swipe support
   let touchStartX = 0;
   carousel.addEventListener(
     "touchstart",
@@ -277,6 +334,8 @@ function initHeroCarousel() {
     { passive: true },
   );
 
+  // Set initial badge state & start rotation
+  showSlide(0);
   startAutoPlay();
 }
 

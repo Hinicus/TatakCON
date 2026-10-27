@@ -22,6 +22,41 @@
 
     <title>TatakCON</title>
 
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="Maligayang pagdating sa opisyal na lunan ng #TatakCON. Sinasalamin ng proyektong ito ang kasaysayan, mga organisasyon, at ang transisyon ng mga mag-aaral ng BulSU College of Nursing." />
+    <meta name="theme-color" content="#12284b" />
+
+    <!-- Open Graph / Facebook / Messenger -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="#TatakCON • BulSU College of Nursing" />
+    <meta
+      property="og:title"
+      content="TatakCON — BulSU College of Nursing Digital Archive & Portal" />
+    <meta
+      property="og:description"
+      content="Explore the institutional history, 8 accredited student councils & guilds, collegiate traditions, and the #TatakCON spatial transition research project." />
+    <meta
+      property="og:image"
+      content="/images/researchers/tatakcon-research-group-pic-1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter / Discord Large Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="TatakCON — BulSU College of Nursing Digital Archive & Portal" />
+    <meta
+      name="twitter:description"
+      content="Explore the institutional history, accredited student organizations, traditions, and the #TatakCON research project." />
+    <meta
+      name="twitter:image"
+      content="/images/researchers/tatakcon-research-group-pic-1.jpg" />
+
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -143,73 +178,22 @@
             </div>
 
             <!-- Right Column: Interactive Landscape College Showcase Carousel (7 Cols on Desktop) -->
+            <!-- Edit index.js initHeroCarousel to add or remove data -->
             <div class="lg:col-span-7 relative mt-space-md lg:mt-0">
               <div
                 id="hero-carousel"
                 class="relative w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl bg-surface-container group select-none ring-1 ring-primary/10">
-                <!-- Slides Track -->
-                <!-- HERE: Add as many slides as you want -->
-                <div class="relative w-full h-full" id="carousel-slides">
-                  <!-- Slide 1 (Active by default) -->
-                  <div
-                    class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-700 ease-in-out z-10"
-                    data-title="BulSU College of Nursing"
-                    data-subtitle="AACCUP Level IV Re-Accredited Institution"
-                    data-icon="account_balance">
-                    <img
-                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                      alt="BulSU College of Nursing"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvV31wUoattWhPm4JOcJCabBT93IsAWAuWyo5r7-1x9TX2DFKdE4FedvCghYYCMa4Pk2jT3yanSy6cG9EzTHUBk5SCDtL8wv-c8Oz8JRUAJo5_URR_0nYinn3MjoOh__I6gh4RcDx3Uh-M-BlZ5YZ-JFtkTBfhxc2tIW7C1Fl48WKh5EU6dgxHUryqhlIy2O1hOvJP7l_dj59AmtL9M_DhJzGGswOET66f4nx0-CEDgvQImLLJgyYd" />
-                  </div>
-
-                  <!-- Slide 2 -->
-                  <div
-                    class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out z-0 pointer-events-none"
-                    data-title="Clinical Skills & Simulation"
-                    data-subtitle="Excellence in Hands-On Nursing Training"
-                    data-icon="medical_services">
-                    <img
-                      loading="lazy"
-                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                      alt="CONlympics Clinical Training"
-                      src="/images/traditions-culture/para-sa-masa-1.jpg" />
-                  </div>
-
-                  <!-- Slide 3 -->
-                  <div
-                    class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out z-0 pointer-events-none"
-                    data-title="Community Health & Outreach"
-                    data-subtitle="Compassionate Service Beyond Campus Walls"
-                    data-icon="volunteer_activism">
-                    <img
-                      loading="lazy"
-                      class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                      alt="Community Outreach"
-                      src="/images/con-org-logo/college-of-nursing.jpg" />
-                  </div>
-                </div>
+                <!-- Slides Track (Populated dynamically by index.js) -->
+                <div class="relative w-full h-full" id="carousel-slides"></div>
 
                 <!-- Dark Gradient Overlay -->
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/15 to-transparent z-20 pointer-events-none"></div>
 
-                <!-- Top-Right Slide Indicator Pills -->
+                <!-- Top-Right Slide Indicator Pills (Populated dynamically by index.js) -->
                 <div
                   id="carousel-indicators"
-                  class="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-30 flex items-center gap-1.5 bg-primary/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15">
-                  <button
-                    type="button"
-                    aria-label="Slide 1"
-                    class="carousel-dot w-6 h-1.5 rounded-full bg-white transition-all duration-300"></button>
-                  <button
-                    type="button"
-                    aria-label="Slide 2"
-                    class="carousel-dot w-1.5 h-1.5 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300"></button>
-                  <button
-                    type="button"
-                    aria-label="Slide 3"
-                    class="carousel-dot w-1.5 h-1.5 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300"></button>
-                </div>
+                  class="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-30 flex items-center gap-1.5 bg-primary/50 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/15"></div>
 
                 <!-- Previous / Next Navigation Buttons -->
                 <button
@@ -231,7 +215,7 @@
                   >
                 </button>
 
-                <!-- Floating Architectural Badge (Updates Dynamically & Compact on Mobile) -->
+                <!-- Floating Architectural Badge (Updates Dynamically) -->
                 <div
                   class="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 z-30 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-2.5 sm:p-space-md rounded-xl sm:rounded-DEFAULT shadow-lg flex items-center justify-between gap-2 border border-white/40">
                   <div
@@ -270,227 +254,178 @@
             </div>
           </div>
         </section>
-        <!-- Section 2: Explore CON Quick Links / 5 Category Cards -->
-        <section class="w-full bg-surface-container-low py-space-3xl">
+        <!-- Explore CON Section -->
+        <!-- Explore CON Section (Full-Width Warm Band with White Cards) -->
+        <section
+          class="w-full bg-surface-container-low border-y border-surface-variant/40 py-space-2xl md:py-space-3xl">
           <div
             class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
             <div
-              class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-sm">
+              class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-xl">
               <div>
-                <div
-                  class="flex items-center gap-space-xs text-secondary mb-space-xxs">
-                  <span class="material-symbols-outlined text-[20px]">hub</span>
-                  <span
-                    class="font-label-sm text-label-sm uppercase tracking-wider"
-                    >Gateway Index</span
-                  >
-                </div>
-                <h2 class="font-headline-lg text-headline-lg text-primary">
-                  Explore CON
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold"
+                  >Directory &amp; Archives</span
+                >
+                <h2
+                  class="font-headline-lg text-3xl md:text-4xl font-bold text-primary tracking-tight font-serif mt-1">
+                  Explore the College
                 </h2>
               </div>
               <p
                 class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
-                Explore the five pillars that define our collegiate life,
-                collective history, frontline presence, and professional legacy.
+                Navigate through the institutional milestones, accredited
+                student councils, cultural traditions, and research archives of
+                BulSU CON.
               </p>
             </div>
-            <!-- 5 Interactive Horizontal Cards -->
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <!-- 1. Our Story -->
               <a
-                class="group bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
-                data-path="our-story"
-                href="#">
+                href="/pages/our-story/our-story.html"
+                class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm border border-surface-variant/60 hover:border-secondary hover:shadow-md hover:-translate-y-0.5 transition-all group flex flex-col justify-between h-full">
                 <div>
                   <div
-                    class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md group-hover:bg-primary-container group-hover:text-surface transition-colors">
+                    class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined text-[24px]"
-                      >auto_stories</span
+                      >history_edu</span
                     >
                   </div>
-                  <span
-                    class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block mb-space-xxs"
-                    >Archive • 01</span
-                  >
                   <h3
-                    class="font-title-md text-title-md text-primary mb-space-xs">
-                    Our Story
+                    class="font-headline-sm text-xl font-bold text-primary font-serif group-hover:text-secondary transition-colors">
+                    Our Story &amp; Heritage
                   </h3>
+                  <span
+                    class="block font-caption text-caption text-secondary uppercase tracking-wider font-semibold mt-1 mb-3"
+                    >Institutional History</span
+                  >
                   <p
-                    class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                    From our founding charter to international health impact.
+                    class="font-body-sm text-on-surface-variant leading-relaxed">
+                    Trace the evolution of the BulSU College of Nursing—from its
+                    pioneering cohort of 200 student nurses in 2004 to its
+                    prestigious AACCUP Level IV Re-Accredited status today.
                   </p>
                 </div>
                 <div
-                  class="pt-space-lg flex items-center justify-between text-secondary group-hover:text-primary transition-colors">
-                  <span class="font-label-sm text-label-sm">Browse</span>
-                  <span
-                    class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-secondary group-hover:text-surface transition-all">
-                    <span
-                      class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </span>
+                  class="mt-6 flex items-center gap-1 text-sm font-bold text-secondary group-hover:translate-x-1 transition-transform">
+                  <span>Read History</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
                 </div>
               </a>
+
               <!-- 2. CON Community -->
               <a
-                class="group bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
-                data-path="con-community"
-                href="#">
+                href="/pages/con-community/con-community.html"
+                class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm border border-surface-variant/60 hover:border-secondary hover:shadow-md hover:-translate-y-0.5 transition-all group flex flex-col justify-between h-full">
                 <div>
                   <div
-                    class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md group-hover:bg-primary-container group-hover:text-surface transition-colors">
+                    class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined text-[24px]"
                       >groups</span
                     >
                   </div>
-                  <span
-                    class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block mb-space-xxs"
-                    >Network • 02</span
-                  >
                   <h3
-                    class="font-title-md text-title-md text-primary mb-space-xs">
+                    class="font-headline-sm text-xl font-bold text-primary font-serif group-hover:text-secondary transition-colors">
                     CON Community
                   </h3>
+                  <span
+                    class="block font-caption text-caption text-secondary uppercase tracking-wider font-semibold mt-1 mb-3"
+                    >Accredited Councils &amp; Guilds</span
+                  >
                   <p
-                    class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                    Student leadership, faculty scholars, preceptors, and
-                    cohorts.
+                    class="font-body-sm text-on-surface-variant leading-relaxed">
+                    Discover the vibrant ecosystem of student leadership.
+                    Explore the 8 official councils, academic societies, and
+                    cultural guilds shaping advocacy and clinical excellence
+                    beyond the walls.
                   </p>
                 </div>
                 <div
-                  class="pt-space-lg flex items-center justify-between text-secondary group-hover:text-primary transition-colors">
-                  <span class="font-label-sm text-label-sm">Connect</span>
-                  <span
-                    class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-secondary group-hover:text-surface transition-all">
-                    <span
-                      class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </span>
+                  class="mt-6 flex items-center gap-1 text-sm font-bold text-secondary group-hover:translate-x-1 transition-transform">
+                  <span>View Directory</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
                 </div>
               </a>
+
               <!-- 3. Traditions & Culture -->
               <a
-                class="group bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
-                data-path="traditions-culture"
-                href="#">
+                href="/pages/traditions-culture/traditions-culture.html"
+                class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm border border-surface-variant/60 hover:border-secondary hover:shadow-md hover:-translate-y-0.5 transition-all group flex flex-col justify-between h-full">
                 <div>
                   <div
-                    class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md group-hover:bg-primary-container group-hover:text-surface transition-colors">
+                    class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined text-[24px]"
                       >military_tech</span
                     >
                   </div>
-                  <span
-                    class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block mb-space-xxs"
-                    >Heritage • 03</span
-                  >
                   <h3
-                    class="font-title-md text-title-md text-primary mb-space-xs">
+                    class="font-headline-sm text-xl font-bold text-primary font-serif group-hover:text-secondary transition-colors">
                     Traditions &amp; Culture
                   </h3>
+                  <span
+                    class="block font-caption text-caption text-secondary uppercase tracking-wider font-semibold mt-1 mb-3"
+                    >Ceremonies &amp; Rites</span
+                  >
                   <p
-                    class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                    The Pinning Ceremony, Nightingale Lamp, and collegiate
-                    songs.
+                    class="font-body-sm text-on-surface-variant leading-relaxed">
+                    Honor the collegiate legacy of the Isko-Nars. From the
+                    symbolic lighting of the Florence Nightingale Lamp to
+                    intense clinical skill showdowns, explore the lived spirit
+                    of the nursing cohort.
                   </p>
                 </div>
                 <div
-                  class="pt-space-lg flex items-center justify-between text-secondary group-hover:text-primary transition-colors">
-                  <span class="font-label-sm text-label-sm">Honors</span>
-                  <span
-                    class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-secondary group-hover:text-surface transition-all">
-                    <span
-                      class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </span>
+                  class="mt-6 flex items-center gap-1 text-sm font-bold text-secondary group-hover:translate-x-1 transition-transform">
+                  <span>Explore Traditions</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
                 </div>
               </a>
-              <!-- 4. What We Carry -->
+
+              <!-- 4. About TatakCON -->
               <a
-                class="group bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
-                data-path="what-we-carry"
-                href="#">
+                href="/pages/about/about.html"
+                class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm border border-surface-variant/60 hover:border-secondary hover:shadow-md hover:-translate-y-0.5 transition-all group flex flex-col justify-between h-full">
                 <div>
                   <div
-                    class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md group-hover:bg-primary-container group-hover:text-surface transition-colors">
+                    class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                     <span class="material-symbols-outlined text-[24px]"
-                      >medical_services</span
+                      >museum</span
                     >
                   </div>
-                  <span
-                    class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block mb-space-xxs"
-                    >Duty • 04</span
-                  >
                   <h3
-                    class="font-title-md text-title-md text-primary mb-space-xs">
-                    What We Carry
+                    class="font-headline-sm text-xl font-bold text-primary font-serif group-hover:text-secondary transition-colors">
+                    The #TatakCON Project
                   </h3>
+                  <span
+                    class="block font-caption text-caption text-secondary uppercase tracking-wider font-semibold mt-1 mb-3"
+                    >Academic &amp; Spatial Transition Study</span
+                  >
                   <p
-                    class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                    Clinical kit, professional ethics, stethoscope, and
-                    compassion.
+                    class="font-body-sm text-on-surface-variant leading-relaxed">
+                    An empirical research initiative and digital repository by
+                    the Bachelor of Public Administration team, documenting the
+                    resilience and lived experiences of BulSU nursing students.
                   </p>
                 </div>
                 <div
-                  class="pt-space-lg flex items-center justify-between text-secondary group-hover:text-primary transition-colors">
-                  <span class="font-label-sm text-label-sm">Examine</span>
-                  <span
-                    class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-secondary group-hover:text-surface transition-all">
-                    <span
-                      class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </span>
-                </div>
-              </a>
-              <!-- 5. Resources -->
-              <a
-                class="group bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
-                data-path="resources"
-                href="#">
-                <div>
-                  <div
-                    class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md group-hover:bg-primary-container group-hover:text-surface transition-colors">
-                    <span class="material-symbols-outlined text-[24px]"
-                      >folder_special</span
-                    >
-                  </div>
-                  <span
-                    class="font-caption text-caption text-on-surface-variant uppercase tracking-wider block mb-space-xxs"
-                    >Tools • 05</span
+                  class="mt-6 flex items-center gap-1 text-sm font-bold text-secondary group-hover:translate-x-1 transition-transform">
+                  <span>Meet the Researchers</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
                   >
-                  <h3
-                    class="font-title-md text-title-md text-primary mb-space-xs">
-                    Resources
-                  </h3>
-                  <p
-                    class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                    Clinical guidelines, peer-reviewed journals, and study
-                    handbooks.
-                  </p>
-                </div>
-                <div
-                  class="pt-space-lg flex items-center justify-between text-secondary group-hover:text-primary transition-colors">
-                  <span class="font-label-sm text-label-sm">Access</span>
-                  <span
-                    class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-secondary group-hover:text-surface transition-all">
-                    <span
-                      class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </span>
                 </div>
               </a>
             </div>
           </div>
         </section>
-        <!-- Section 3: Feature / Callout Banner ("Why does this matter?") -->
+        <!-- Section  -->
         <section
           class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin my-space-3xl">
           <div

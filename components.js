@@ -250,9 +250,9 @@ const footerHTML = `
         <h3 class="font-headline-md text-headline-md text-surface tracking-tight font-serif">"TO SAVE AND TO SERVICE"</h3>
       </div>
       <div class="flex items-center gap-4 self-start md:self-auto bg-white/5 border border-white/10 rounded-2xl px-5 py-3">
-        <img alt="Bulacan State University Logo" class="w-14 h-14 object-contain rounded-full bg-white/10 p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4CXiiyNmDCisGd0AENj86KsBZypmYUac7Hdy565E4nf-n_b9G7oBUxO4_ICtPoE-hImnjTkV3Yj-wrD5vsnWeuWCfnDEWbqtoMvRzdlV9u9KMOP28nyKBq32kiELq_cCF18AN5bHjeVMiWap0AZ6EKazyEXRE03I_zMwcOyUU2WM2YWgIWJClNOxR0OhqJ7wrpGVuy9gErL-ICrfgv7boc4eUVGBse2qZZxiOk244p_sKTgsK_7TqgMkh3ov5PTxYhQ">
+        <img alt="Bulacan State University Logo" class="w-14 h-14 object-contain rounded-full bg-white/10 p-1" src="/images/logo/bulsu_logo.png">
         <div class="w-px h-10 bg-white/10"></div>
-        <img alt="College of Nursing Logo" class="w-14 h-14 object-contain rounded-full bg-white/10 p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn-zC6TtQTlZokg2FPBxiN8q-6ABUs75diq1L-S4cdfCekbdcOtn7LaVp2jkHTFiCcGamvxZ2XchgZdTmVxaBuVi8chISLbejCCeoT9vqxFDLAa81EHG9zmXuP7r5gKJL-5mZU7EJTVbHAh7G0Y9X2su1SgA9pLM9OuDWFxRQKISCWtxWEQXxcuu004bEhsfTCE7RoBdV56ZNjTl-HGc3EjCEeqJs_xNk1_cmO1drlXZpfHpNd5LhHxQnTvwAw51cBag">
+        <img alt="College of Nursing Logo" class="w-14 h-14 object-contain rounded-full bg-white/10 p-1" src="/images/con-org-logo/college-of-nursing.jpg">
       </div>
     </div>
 
