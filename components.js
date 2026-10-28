@@ -560,7 +560,6 @@ if (document.readyState === "loading") {
 
 // 6. Global Image Lightbox (Click-to-Zoom)
 function initImageLightbox() {
-  // Create the full-screen modal overlay once
   const overlay = document.createElement("div");
   overlay.id = "global-lightbox";
   overlay.style.cssText =
@@ -592,7 +591,8 @@ function initImageLightbox() {
   const lightboxCaption = overlay.querySelector("#lightbox-caption");
 
   function openLightbox(src, altText) {
-    // If it's a compressed Cloudinary URL, request a crisp 1600px version for zoom
+    if (!src || src.endsWith("/...")) return;
+
     const highResSrc = window.optimizeImageUrl
       ? window.optimizeImageUrl(src, 1600)
       : src;
@@ -604,7 +604,7 @@ function initImageLightbox() {
     overlay.style.opacity = "1";
     overlay.style.pointerEvents = "auto";
     lightboxImg.style.transform = "scale(1)";
-    document.body.style.overflow = "hidden"; // Prevent background scrolling while open
+    document.body.style.overflow = "hidden";
   }
 
   function closeLightbox() {
@@ -614,18 +614,31 @@ function initImageLightbox() {
     document.body.style.overflow = "";
   }
 
-  // Add zoom cursor to eligible images inside <main> and handle clicks
+  // Handle clicks on images (including images covered by gradient overlays)
   document.addEventListener("click", (e) => {
-    const img = e.target.closest("main img");
-    if (!img) return;
+    // Ignore clicks on links or buttons
+    if (e.target.closest("a, button")) return;
 
-    // Ignore images inside clickable links (<a>) or buttons, or tiny icons
-    if (img.closest("a, button") || img.clientWidth < 90) return;
+    let img = e.target.closest("main img");
+
+    // If user clicked a decorative gradient overlay div covering an image, grab the sibling img
+    if (!img) {
+      const figureOrCard = e.target.closest("main figure, main .relative");
+      if (figureOrCard) {
+        const candidate = figureOrCard.querySelector("img");
+        if (candidate && figureOrCard.querySelectorAll("img").length === 1) {
+          img = candidate;
+        }
+      }
+    }
+
+    // Allow hero badges (72px+) while ignoring tiny UI icons
+    if (!img || img.clientWidth < 48) return;
 
     openLightbox(img.src, img.alt);
   });
 
-  // Automatically show a magnifying glass cursor when hovering over zoomable images
+  // Show zoom-in cursor on all non-link images inside <main>
   const styleTag = document.createElement("style");
   styleTag.textContent = `
     main img:not(a img):not(button img) {
@@ -634,14 +647,12 @@ function initImageLightbox() {
   `;
   document.head.appendChild(styleTag);
 
-  // Close when clicking the backdrop or the close button
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay || e.target.closest("#lightbox-close")) {
       closeLightbox();
     }
   });
 
-  // Close when pressing the Escape key
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && overlay.style.pointerEvents === "auto") {
       closeLightbox();
