@@ -524,3 +524,147 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+// 5. Global Floating "Back to Top" Button
+function initBackToTop() {
+  const backToTopBtn = document.createElement("button");
+  backToTopBtn.type = "button";
+  backToTopBtn.setAttribute("aria-label", "Back to top");
+
+  backToTopBtn.className =
+    "fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-primary-container hover:bg-secondary text-white shadow-lg border border-white/15 flex items-center justify-center opacity-0 translate-y-4 pointer-events-none transition-all duration-300";
+  backToTopBtn.innerHTML =
+    '<span class="material-symbols-outlined text-[20px]">arrow_upward</span>';
+
+  document.body.appendChild(backToTopBtn);
+
+  // Track state to prevent DOM manipulation spam on every scroll pixel
+  let isVisible = false;
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      const shouldShow = window.scrollY > 450;
+
+      // Only toggle classes if the visibility state actually needs to change
+      if (shouldShow !== isVisible) {
+        isVisible = shouldShow;
+        backToTopBtn.classList.toggle("opacity-100", isVisible);
+        backToTopBtn.classList.toggle("translate-y-0", isVisible);
+        backToTopBtn.classList.toggle("opacity-0", !isVisible);
+        backToTopBtn.classList.toggle("translate-y-4", !isVisible);
+        backToTopBtn.classList.toggle("pointer-events-none", !isVisible);
+      }
+    },
+    { passive: true },
+  );
+
+  backToTopBtn.addEventListener("click", () => {
+    // The CSS scroll-smooth class on your <html> tags handles the animation automatically
+    window.scrollTo(0, 0);
+  });
+}
+
+// Safely execute whether the DOM is still loading or has already finished
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initBackToTop);
+} else {
+  initBackToTop();
+}
+
+// 6. Global Image Lightbox (Click-to-Zoom)
+function initImageLightbox() {
+  // Create the full-screen modal overlay once
+  const overlay = document.createElement("div");
+  overlay.id = "global-lightbox";
+  overlay.style.cssText =
+    "position: fixed; inset: 0; z-index: 10000; background-color: rgba(0, 19, 49, 0.92); backdrop-filter: blur(6px); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem; opacity: 0; pointer-events: none; transition: opacity 0.25s ease;";
+
+  overlay.innerHTML = `
+    <button
+      type="button"
+      aria-label="Close image preview"
+      id="lightbox-close"
+      style="position: absolute; top: 1.25rem; right: 1.25rem; width: 2.75rem; height: 2.75rem;"
+      class="rounded-full bg-white/10 hover:bg-secondary text-white border border-white/20 flex items-center justify-center transition-colors shadow-lg">
+      <span class="material-symbols-outlined text-[22px]">close</span>
+    </button>
+    <img
+      id="lightbox-img"
+      src=""
+      alt=""
+      style="max-width: 92vw; max-height: 82vh; transform: scale(0.95); transition: transform 0.25s ease;"
+      class="w-auto h-auto object-contain rounded-xl shadow-2xl border border-white/15 bg-primary" />
+    <p
+      id="lightbox-caption"
+      class="mt-3 text-xs sm:text-sm text-surface-variant font-medium text-center max-w-2xl px-4 empty:hidden"></p>
+  `;
+
+  document.body.appendChild(overlay);
+
+  const lightboxImg = overlay.querySelector("#lightbox-img");
+  const lightboxCaption = overlay.querySelector("#lightbox-caption");
+
+  function openLightbox(src, altText) {
+    // If it's a compressed Cloudinary URL, request a crisp 1600px version for zoom
+    const highResSrc = window.optimizeImageUrl
+      ? window.optimizeImageUrl(src, 1600)
+      : src;
+
+    lightboxImg.src = highResSrc;
+    lightboxImg.alt = altText || "Expanded view";
+    lightboxCaption.textContent = altText || "";
+
+    overlay.style.opacity = "1";
+    overlay.style.pointerEvents = "auto";
+    lightboxImg.style.transform = "scale(1)";
+    document.body.style.overflow = "hidden"; // Prevent background scrolling while open
+  }
+
+  function closeLightbox() {
+    overlay.style.opacity = "0";
+    overlay.style.pointerEvents = "none";
+    lightboxImg.style.transform = "scale(0.95)";
+    document.body.style.overflow = "";
+  }
+
+  // Add zoom cursor to eligible images inside <main> and handle clicks
+  document.addEventListener("click", (e) => {
+    const img = e.target.closest("main img");
+    if (!img) return;
+
+    // Ignore images inside clickable links (<a>) or buttons, or tiny icons
+    if (img.closest("a, button") || img.clientWidth < 90) return;
+
+    openLightbox(img.src, img.alt);
+  });
+
+  // Automatically show a magnifying glass cursor when hovering over zoomable images
+  const styleTag = document.createElement("style");
+  styleTag.textContent = `
+    main img:not(a img):not(button img) {
+      cursor: zoom-in;
+    }
+  `;
+  document.head.appendChild(styleTag);
+
+  // Close when clicking the backdrop or the close button
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay || e.target.closest("#lightbox-close")) {
+      closeLightbox();
+    }
+  });
+
+  // Close when pressing the Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.style.pointerEvents === "auto") {
+      closeLightbox();
+    }
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initImageLightbox);
+} else {
+  initImageLightbox();
+}
