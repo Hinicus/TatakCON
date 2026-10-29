@@ -167,25 +167,26 @@ function renderNewsList(articles, replace = true) {
 // --- 1. Edit or Add Carousel Slides Here (JSON-style Data Array) ---
 const carouselData = [
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAvV31wUoattWhPm4JOcJCabBT93IsAWAuWyo5r7-1x9TX2DFKdE4FedvCghYYCMa4Pk2jT3yanSy6cG9EzTHUBk5SCDtL8wv-c8Oz8JRUAJo5_URR_0nYinn3MjoOh__I6gh4RcDx3Uh-M-BlZ5YZ-JFtkTBfhxc2tIW7C1Fl48WKh5EU6dgxHUryqhlIy2O1hOvJP7l_dj59AmtL9M_DhJzGGswOET66f4nx0-CEDgvQImLLJgyYd",
+    src: "/images/hero-carousel/con-pimentel.jpg",
     alt: "BulSU College of Nursing",
     title: "BulSU College of Nursing",
     subtitle: "AACCUP Level IV Re-Accredited Institution",
     icon: "account_balance",
+    imgClass:
+      "object-cover scale-125 origin-[45%_90%] group-hover:scale-[1.30]",
   },
   {
-    src: "/images/traditions-culture/para-sa-masa-1.jpg",
-    alt: "CONlympics Clinical Training",
-    title: "Clinical Skills & Simulation",
-    subtitle: "Excellence in Hands-On Nursing Training",
-    icon: "medical_services",
+    src: "/images/hero-carousel/candlelight.jpg",
+    alt: "Candlelighting",
+    title: "21ST Capping, Pinning, and Candle Lighting Ceremony",
+    icon: "candle",
   },
   {
-    src: "/images/con-org-logo/college-of-nursing.jpg",
-    alt: "Community Outreach",
-    title: "Community Health & Outreach",
-    subtitle: "Compassionate Service Beyond Campus Walls",
-    icon: "volunteer_activism",
+    src: "/images/hero-carousel/send-off-future-RN.jpg",
+    alt: "Send-Off Mass for Future RNs",
+    title: "Send-Off Mass for Future RNs",
+    subtitle: "Heart of Jesus and Mary Parish Church, Malolos",
+    icon: "church",
   },
 ];
 
@@ -214,7 +215,9 @@ function initHeroCarousel() {
         }">
         <img
           ${index === 0 ? "" : 'loading="lazy"'}
-          class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+          class="w-full h-full transform transition-transform duration-700 ${
+            item.imgClass || "object-cover group-hover:scale-105"
+          }"
           alt="${item.alt || item.title}"
           src="${item.src}" />
       </div>
@@ -268,8 +271,26 @@ function initHeroCarousel() {
 
     // Update the floating badge directly from the carouselData object
     const currentItem = carouselData[currentIndex];
-    if (badgeTitle) badgeTitle.textContent = currentItem.title;
-    if (badgeSubtitle) badgeSubtitle.textContent = currentItem.subtitle;
+    if (badgeTitle) {
+      const titleText = currentItem.title || "";
+      badgeTitle.textContent = titleText;
+
+      // Dynamically scale down font size for long titles
+      if (titleText.length > 55) {
+        // Very long titles (e.g., Send-Off Mass for Future RNs...)
+        badgeTitle.className =
+          "font-title-sm text-[11px] sm:text-xs text-primary leading-tight line-clamp-2 font-semibold transition-all duration-200";
+      } else if (titleText.length > 35) {
+        // Medium-long titles
+        badgeTitle.className =
+          "font-title-sm text-xs sm:text-[13px] text-primary leading-snug line-clamp-2 font-semibold transition-all duration-200";
+      } else {
+        // Short / standard titles
+        badgeTitle.className =
+          "font-title-sm text-sm sm:text-title-sm text-primary leading-snug line-clamp-2 font-semibold transition-all duration-200";
+      }
+    }
+    if (badgeSubtitle) badgeSubtitle.textContent = currentItem.subtitle || "";
     if (badgeIcon) badgeIcon.textContent = currentItem.icon || "photo_camera";
   }
 
