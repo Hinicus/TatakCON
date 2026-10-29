@@ -2141,8 +2141,36 @@ main > :last-child {
   resize: both;
 }
 
+.snap-start {
+  scroll-snap-align: start;
+}
+
 .scroll-mt-28 {
   scroll-margin-top: 7rem;
+}
+
+.scroll-mt-8 {
+  scroll-margin-top: 2rem;
+}
+
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
+}
+
+.scroll-mb-16 {
+  scroll-margin-bottom: 4rem;
+}
+
+.scroll-mt-32 {
+  scroll-margin-top: 8rem;
+}
+
+.scroll-mt-64 {
+  scroll-margin-top: 16rem;
+}
+
+.scroll-mt-96 {
+  scroll-margin-top: 24rem;
 }
 
 .grid-cols-1 {
@@ -2275,11 +2303,6 @@ main > :last-child {
 
 .gap-space-xxs {
   gap: 0.25rem;
-}
-
-.gap-x-5 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
 }
 
 .gap-x-6 {
@@ -3762,11 +3785,6 @@ main > :last-child {
 .text-outline {
   --tw-text-opacity: 1;
   color: rgb(117 119 127 / var(--tw-text-opacity, 1));
-}
-
-.text-outline-variant {
-  --tw-text-opacity: 1;
-  color: rgb(196 198 207 / var(--tw-text-opacity, 1));
 }
 
 .text-primary {
